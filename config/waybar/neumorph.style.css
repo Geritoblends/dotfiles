@@ -1,0 +1,218 @@
+/* Grayscale palette */
+@define-color base00 #333333;  /* darkest */
+@define-color base01 #474747;
+@define-color base02 #4A4A4A;
+@define-color base03 #545454;
+@define-color base04 #5E5E5E;
+@define-color base05 #686868;
+@define-color base06 #727272;
+@define-color base07 #7C7C7C;
+
+@define-color red       #868686;  /* repurpose as "alert gray" */
+@define-color peach     #909090;
+@define-color yellow    #9A9A9A;
+@define-color green     #A4A4A4;
+@define-color teal      #AEAEAE;
+@define-color blue      #B8B8B8;
+@define-color mauve     #C2C2C2;
+@define-color flamingo  #CCCCCC;  /* lightest */
+
+@define-color fg        @base05;
+@define-color bg        @base00;
+@define-color accent    @blue;
+
+* {
+    font-family: "JetBrains Mono NF";
+    font-size: 15px;
+    font-weight: 600;
+    color: @blue;
+    text-shadow: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+#waybar {
+    background-color: alpha(@bg, 1);
+}
+
+.modules-left, .modules-center, .modules-right {
+    background-color: transparent; /* base00 with opacity */
+    border-radius: 0px 0px 0px 0px;
+    margin-top: 0px;
+    box-shadow: none;
+    transition: all .4s ease;
+}
+
+.modules-left {
+    margin-top: 10px;
+    background-color: transparent;
+
+}
+
+.modules-right {
+    margin-bottom: 15px;
+}
+
+.modules-center {
+    background-color: transparent;
+}
+
+tooltip {
+    border-radius: 10px;
+    background-color: @bg; /* base01 with opacity */
+    border: solid 2px @accent;
+}
+
+#custom-apple {
+    margin-left: 0px;
+    font-size: 28px;
+    color: @blue;
+    padding: 0px 0px;
+}
+
+#workspaces {
+    margin: 0 5px 0px 0px;
+    background-color: transparent;
+    border-radius: 0px 0px 0px 0px;
+}
+
+#workspaces button {
+    font-size: 5px;
+    border-radius: 8px;
+    padding: 0px;
+    padding-right: 0px;
+    background-image: none;
+    transition: all .4s ease;
+}
+
+#workspaces button * {
+    transition: all .3s ease;
+    border: solid 0px transparent;
+    box-shadow: transparent;
+    outline: transparent;
+}
+
+#workspaces button.empty * {
+    color: alpha(@blue, 0.2);
+}
+
+#workspaces button.active * {
+    color: @blue;
+}
+
+#workspaces button:hover * {
+    color: @blue;
+}
+
+#tray {
+    margin: 0px 2px;
+    margin-top: 10px;
+    border-radius: 0px;
+}
+
+#tray menu {
+    background-color: rgba(255, 222, 222, 1);
+}
+
+#tray * {
+    padding: 0 0px;
+}
+
+#mode,
+#battery,
+#cpu,
+#network,
+#memory,
+#custom-spotlight,
+#bluetooth,
+#pulseaudio,
+#backlight,
+#clock {
+    margin: 10px 0px;
+    padding: 0px 5px;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+#clock {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: @flamingo;
+}
+
+#cpu, #memory, #bluetooth, #network, #custom-spotlight, #temperature {
+    color: @fg;
+    transition: all .4s ease;
+}
+
+#clock:hover,
+#custom-notification:hover,
+#bluetooth:hover,
+#network:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#custom-finder:hover,
+#custom-spotlight:hover {
+    color: @peach;
+}
+
+#battery {
+    padding: 0px 0px;
+    transition: all .3s ease;
+    color: @fg;
+}
+
+#battery.charging {
+    color: @green;
+}
+
+#battery.warning:not(.charging),
+#battery.critical:not(.charging) {
+    color: @red;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#battery.charging.full {
+    color: @peach;
+}
+
+@keyframes blink {
+    to {
+        color: @fg;
+    }
+}
+
+#custom-cava {
+    margin: 0px 10px;
+}
+
+#mpd {
+    color: @fg;
+    margin-top: 5px;
+        font-size: 0px;
+}
+
+#cpu {
+    color: @green;
+}
+
+#memory {
+    color: @yellow;
+}
+
+#network {
+    color: @red;
+}
+
+#temperature {
+    color: @blue;
+}
+
+

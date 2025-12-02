@@ -1,0 +1,86 @@
+@define-color theme_bg_color #333333;
+@define-color theme_fg_color #cccccc;
+
+:root {
+    --bg-primary: #333333;
+    --fg-primary: #cccccc;
+}
+
+window {
+    background-color: var(--bg-primary);
+    color: var(--fg-primary);
+}
+
+/* Then use variables throughout your theme */
+headerbar {
+    background-color: var(--bg-primary);
+    color: var(--fg-primary);
+}
+/* Target common UI containers */
+window,
+menu,
+.navigation-sidebar,
+toolbar,
+headerbar,
+sidebar {
+    background-color: #333333;
+    color: #cccccc;
+}
+
+popover, dialog {
+    background-color: transparent;
+}
+
+/* Common GTK widgets */
+.background {
+    background-color: #333333;
+    color: #cccccc;
+}
+
+.view {
+    background-color: #333333;
+    color: #cccccc;
+}
+
+listbox,
+.listbox {
+    background-color: #333333;
+    color: #cccccc;
+}
+
+listbox row,
+.listbox row {
+    background-color: #333333;
+    color: #cccccc;
+}
+
+/* Handle row selection states */
+listbox row:selected,
+.listbox row:selected {
+    background-color: #9ccfd8; /* Rose Pine foam */
+    color: #333333;
+}
+
+listbox row:hover,
+.listbox row:hover {
+    background-color: #26233a; /* Rose Pine surface */
+}
+
+revealer:backdrop {
+    background-color: #333333;
+    color: #cccccc;
+}
+
+/* Fix unfocused window state */
+window:backdrop centerbox,
+.background:backdrop centerbox {
+    background-color: #333333; /* Keep same color when unfocused */
+    color: #908caa; /* Slightly dimmed text for unfocused state */
+}
+
+/* Also target any child elements */
+centerbox > * {
+    background-color: inherit;
+    color: inherit;
+}
+

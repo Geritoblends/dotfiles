@@ -1,0 +1,86 @@
+@define-color theme_bg_color #202020;
+@define-color theme_fg_color #ebdbb2;
+
+:root {
+    --bg-primary: #202020;
+    --fg-primary: #ebdbb2;
+}
+
+window {
+    background-color: var(--bg-primary);
+    color: var(--fg-primary);
+}
+
+/* Then use variables throughout your theme */
+headerbar {
+    background-color: var(--bg-primary);
+    color: var(--fg-primary);
+}
+/* Target common UI containers */
+window,
+menu,
+.navigation-sidebar,
+toolbar,
+headerbar,
+sidebar {
+    background-color: #202020;
+    color: #ebdbb2;
+}
+
+popover, dialog {
+    background-color: transparent;
+}
+
+/* Common GTK widgets */
+.background {
+    background-color: #202020;
+    color: #ebdbb2;
+}
+
+.view {
+    background-color: #202020;
+    color: #ebdbb2;
+}
+
+listbox,
+.listbox {
+    background-color: #202020;
+    color: #ebdbb2;
+}
+
+listbox row,
+.listbox row {
+    background-color: #202020;
+    color: #ebdbb2;
+}
+
+/* Handle row selection states */
+listbox row:selected,
+.listbox row:selected {
+    background-color: #9ccfd8; /* Rose Pine foam */
+    color: #202020;
+}
+
+listbox row:hover,
+.listbox row:hover {
+    background-color: #26233a; /* Rose Pine surface */
+}
+
+revealer:backdrop {
+    background-color: #202020;
+    color: #ebdbb2;
+}
+
+/* Fix unfocused window state */
+window:backdrop centerbox,
+.background:backdrop centerbox {
+    background-color: #202020; /* Keep same color when unfocused */
+    color: #908caa; /* Slightly dimmed text for unfocused state */
+}
+
+/* Also target any child elements */
+centerbox > * {
+    background-color: inherit;
+    color: inherit;
+}
+

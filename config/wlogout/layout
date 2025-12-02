@@ -1,0 +1,42 @@
+
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : " shutdown",
+    "keybind" : "s"
+}
+
+{
+    "label" : "hibernate",
+    "action" : "systemctl hibernate",
+    "text" : "󰤄 hibernate",
+    "keybind" : "h"
+}
+
+{
+    "label" : "lock",
+    "action" : "hyprlock",
+    "text" : " lock",
+    "keybind" : "l"
+}
+
+{
+    "label" : "wallpaper",
+    "action" : "/home/gero/.local/bin/wallpaper",
+    "text" : " wallpaper",
+    "keybind": "w"
+}
+
+{
+    "label" : "exit",
+    "action" : "hyprctl dispatch exit",
+    "text" : "󰍃 exit",
+    "keybind": "e"
+}
+
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "󰑓 reboot",
+    "keybind" : "r"
+}

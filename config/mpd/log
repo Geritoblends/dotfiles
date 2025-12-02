@@ -1,0 +1,231 @@
+2025-09-21T06:03:28 exception: Failed to open "/home/gero/.config/mpd/state": No such file or directory
+2025-09-21T06:03:28 update: added /Come Back To Me - Mareux.mp3
+2025-09-21T06:03:58 update: added /Come Back To Me - Mareux.mp3
+2025-09-21T06:06:40 player: played "Come Back To Me - Mareux.mp3"
+2025-09-21T06:09:28 player: played "Come Back To Me - Mareux.mp3"
+2025-09-21T06:11:02 update: added /Fakesnow - R. Missing.mp3
+2025-09-21T06:14:52 player: played "Fakesnow - R. Missing.mp3"
+2025-09-21T06:17:56 update: added /Crimewave - Crystal Castles.mp3
+2025-09-21T06:22:15 player: played "Crimewave - Crystal Castles.mp3"
+2025-09-21T06:36:38 player: played "Crimewave - Crystal Castles.mp3"
+2025-09-21T06:40:58 player: played "Crimewave - Crystal Castles.mp3"
+2025-09-21T13:36:51 player: played "Fakesnow - R. Missing.mp3"
+2025-09-21T13:38:48 player: played "Crimewave - Crystal Castles.mp3"
+2025-09-21T13:38:50 exception: Not playing
+2025-09-21T13:41:09 player: played "Come Back To Me - Mareux.mp3"
+2025-09-21T13:44:58 player: played "Fakesnow - R. Missing.mp3"
+2025-09-21T13:49:17 player: played "Crimewave - Crystal Castles.mp3"
+2025-09-21T13:51:47 update: added /Dark Beach - Pastel Ghost.mp3
+2025-09-21T13:55:30 player: played "Dark Beach - Pastel Ghost.mp3"
+2025-09-21T15:45:29 player: played "Come Back To Me - Mareux.mp3"
+2025-09-21T15:49:18 player: played "Fakesnow - R. Missing.mp3"
+2025-09-21T15:53:37 player: played "Crimewave - Crystal Castles.mp3"
+2025-09-21T15:57:19 player: played "Dark Beach - Pastel Ghost.mp3"
+2025-09-21T15:58:47 update: added /Crystals - Vrdnyn.mp3
+2025-09-21T16:02:19 player: played "Crystals - Vrdnyn.mp3"
+2025-09-21T23:04:19 update: added /I dont know you - The Marías.mp3
+2025-09-21T23:07:53 player: played "I dont know you - The Marías.mp3"
+2025-09-22T19:22:22 player: played "Fakesnow - R. Missing.mp3"
+2025-09-22T19:26:02 exception: Failed to decode "/home/gero/Music/Dark Beach - Pastel Ghost.mp3"; Failed to open "/home/gero/Music/Dark Beach - Pastel Ghost.mp3": No such file or directory
+2025-09-22T19:26:41 player: played "Crimewave - Crystal Castles.mp3"
+2025-09-22T19:26:41 player: played "Dark Beach - Pastel Ghost.mp3"
+2025-09-22T19:26:41 exception: Failed to decode "/home/gero/Music/Dark Beach - Pastel Ghost.mp3"; Failed to open "/home/gero/Music/Dark Beach - Pastel Ghost.mp3": No such file or directory
+2025-09-22T19:26:41 player: played "Dark Beach - Pastel Ghost.mp3"
+2025-09-22T21:42:16 exception: Failed to decode "/home/gero/Music/Dark Beach - Pastel Ghost.mp3"; Failed to open "/home/gero/Music/Dark Beach - Pastel Ghost.mp3": No such file or directory
+2025-09-22T21:42:16 player: played "Dark Beach - Pastel Ghost.mp3"
+2025-09-22T21:42:16 exception: Failed to decode "/home/gero/Music/Dark Beach - Pastel Ghost.mp3"; Failed to open "/home/gero/Music/Dark Beach - Pastel Ghost.mp3": No such file or directory
+2025-09-22T21:42:25 exception: Failed to decode "/home/gero/Music/Dark Beach - Pastel Ghost.mp3"; Failed to open "/home/gero/Music/Dark Beach - Pastel Ghost.mp3": No such file or directory
+2025-09-22T21:42:25 player: played "Dark Beach - Pastel Ghost.mp3"
+2025-09-22T21:42:25 exception: Failed to decode "/home/gero/Music/Dark Beach - Pastel Ghost.mp3"; Failed to open "/home/gero/Music/Dark Beach - Pastel Ghost.mp3": No such file or directory
+2025-09-22T21:42:30 update: removing I dont know you - The Marías.mp3
+2025-09-22T21:42:30 update: removing Dark Beach - Pastel Ghost.mp3
+2025-09-22T21:45:51 player: played "Crystals - Vrdnyn.mp3"
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-09-22T22:11:42 update: added /Nocturne - Chopin.mp3
+2025-09-22T22:11:42 update: added /Nocturne - Chopin.webm
+2025-09-22T22:11:44 update: updating /Nocturne - Chopin.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-09-22T22:11:45 update: updating /Nocturne - Chopin.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Note: Illegal Audio-MPEG-Header 0x7c1fd053 at offset 1070660.
+Note: Trying to resync...
+Note: Skipped 281 bytes in input.
+2025-09-22T22:14:34 update: updating /Nocturne - Chopin.mp3
+2025-09-22T22:14:34 update: removing Nocturne - Chopin.webm
+2025-09-24T20:54:37 player: played "Crimewave - Crystal Castles.mp3"
+2025-09-26T16:46:06 player: played "Nocturne - Chopin.mp3"
+2025-09-27T16:55:37 player: played "Nocturne - Chopin.mp3"
+2025-09-27T18:36:46 player: played "Fakesnow - R. Missing.mp3"
+2025-09-30T23:45:31 player: played "Nocturne - Chopin.mp3"
+2025-10-01T09:10:35 player: played "Nocturne - Chopin.mp3"
+2025-10-02T00:04:07 player: played "Nocturne - Chopin.mp3"
+2025-10-02T11:52:36 player: played "Nocturne - Chopin.mp3"
+2025-10-02T11:57:22 player: played "Nocturne - Chopin.mp3"
+2025-10-02T18:02:25 player: played "Come Back To Me - Mareux.mp3"
+2025-10-02T20:37:16 player: played "Come Back To Me - Mareux.mp3"
+2025-10-05T00:04:27 player: played "Come Back To Me - Mareux.mp3"
+2025-10-05T21:10:21 player: played "Come Back To Me - Mareux.mp3"
+2025-10-30T17:52:47 player: played "Come Back To Me - Mareux.mp3"
+2025-10-30T18:18:48 player: played "Come Back To Me - Mareux.mp3"
+2025-10-30T18:22:39 player: played "Fakesnow - R. Missing.mp3"
+2025-11-07T12:08:08 player: played "Come Back To Me - Mareux.mp3"
+2025-11-13T15:33:25 player: played "Come Back To Me - Mareux.mp3"
+2025-11-14T22:16:23 player: played "Nocturne - Chopin.mp3"
+2025-11-15T23:18:19 player: played "Come Back To Me - Mareux.mp3"
+2025-11-16T00:40:33 player: played "Crystals - Vrdnyn.mp3"
+2025-11-17T00:02:43 player: played "Crystals - Vrdnyn.mp3"
+2025-11-18T01:32:17 player: played "Crystals - Vrdnyn.mp3"
+2025-11-18T07:29:49 player: played "Crystals - Vrdnyn.mp3"
+2025-11-18T14:47:43 player: played "Crystals - Vrdnyn.mp3"
+2025-11-18T22:13:09 player: played "Crystals - Vrdnyn.mp3"
+2025-11-19T12:09:27 player: played "Crystals - Vrdnyn.mp3"
+2025-11-19T14:08:44 player: played "Crystals - Vrdnyn.mp3"
+2025-11-20T09:00:20 player: played "Nocturne - Chopin.mp3"
+2025-11-20T10:58:07 player: played "Nocturne - Chopin.mp3"
+2025-11-20T15:57:28 player: played "Nocturne - Chopin.mp3"
+2025-11-20T16:01:46 player: played "Crimewave - Crystal Castles.mp3"
+2025-11-24T23:12:55 update: added /Cariño - The Marías.mp3
+2025-11-24T23:13:27 player: played "Cariño - The Marías.mp3"
+2025-11-25T14:58:37 player: played "Cariño - The Marías.mp3"
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-11-25T19:54:28 update: added /Embrace - Pastel Ghost - Abyss.mp3
+2025-11-25T19:54:28 update: added /Blue - Mareux - Nonstop Romance.mp3
+2025-11-25T19:54:28 update: added /Blackmail - Mareux - Nonstop Romance.mp3
+2025-11-25T19:54:28 update: added /Embrace - Pastel Ghost - Abyss.webm
+2025-11-25T19:54:28 update: added /Wild at Heart - Mareux - Nonstop Romance.mp3
+2025-11-25T19:54:28 update: added /Ébène Fumé - Mareux ft. Riki - Nonstop Romance.mp3
+2025-11-25T19:54:28 update: added /Snake Eyes - Mareux - Nonstop Romance.mp3
+2025-11-25T19:54:28 update: added /Nonstop Romance - Mareux - Nonstop Romance.mp3
+2025-11-25T19:54:28 update: added /Prism - Pastel Ghost - Abyss.mp3
+2025-11-25T19:54:28 update: added /Radio Club - Mareux - Nonstop Romance.mp3
+2025-11-25T19:54:28 update: added /Prodigy - Mareux - Nonstop Romance.mp3
+2025-11-25T19:54:28 update: added /Laugh Now Cry Later - Mareux - Nonstop Romance.mp3
+2025-11-25T20:03:09 update: updating /Embrace - Pastel Ghost - Abyss.mp3
+2025-11-25T20:03:09 update: added /Skeleton - Pastel Ghost - Abyss.mp3
+2025-11-25T20:03:09 update: added /DARK BEACH - Pastel Ghost - Abyss.mp3
+2025-11-25T20:03:09 update: added /Pulse - Pastel Ghost - Abyss.mp3
+2025-11-25T20:03:09 update: added /Shadows - Pastel Ghost - Abyss.mp3
+2025-11-25T20:03:09 update: added /Clouds - Pastel Ghost - Abyss.mp3
+2025-11-25T20:03:09 update: added /Abyss - Pastel Ghost - Abyss.mp3
+2025-11-25T20:03:09 update: added /Lilacs - Pastel Ghost - Abyss.mp3
+2025-11-25T20:03:09 update: added /Translucid - Pastel Ghost - Abyss.mp3
+2025-11-25T20:03:09 update: removing Embrace - Pastel Ghost - Abyss.webm
+2025-11-25T20:03:45 player: played "Cariño - The Marías.mp3"
+2025-11-25T20:06:38 update: added /1979 - Mareux - Decade.mp3
+2025-11-25T20:06:38 update: removing Come Back To Me - Mareux.mp3
+2025-11-25T20:06:38 exception: No such playlist
+2025-11-25T20:07:03 update: added /Come Back To Me - Mareux - Decade.mp3
+2025-11-25T20:07:03 player: played "1979 - Mareux - Decade.mp3"
+2025-11-25T20:07:03 exception: Playlist already exists
+2025-11-25T20:07:17 exception: Not playing
+2025-11-25T20:07:18 exception: Not playing
+2025-11-25T20:07:19 exception: Not playing
+2025-11-25T20:07:21 update: added /Sail - Mareux - Decade.webm
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-11-25T20:07:21 update: added /Sail - Mareux - Decade.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-11-25T20:07:31 update: updating /Sail - Mareux - Decade.mp3
+2025-11-25T20:07:31 update: removing Sail - Mareux - Decade.webm
+2025-11-25T20:07:31 player: played "Sail - Mareux - Decade.mp3"
+2025-11-25T20:07:31 exception: Playlist already exists
+2025-11-25T20:08:09 update: added /Cold Summer - Mareux - Decade.mp3
+2025-11-25T20:08:09 player: played "1979 - Mareux - Decade.mp3"
+2025-11-25T20:08:09 exception: Playlist already exists
+2025-11-25T20:09:33 player: played "1979 - Mareux - Decade.mp3"
+2025-11-25T20:10:29 update: updating /Sail - Mareux - Decade.mp3
+2025-11-25T20:10:43 update: updating /Cold Summer - Mareux - Decade.mp3
+2025-11-25T20:17:27 player: played "1979 - Mareux - Decade.mp3"
+2025-11-25T20:19:16 update: added /Cruel World - Lana Del Rey - Ultraviolence.mp3
+2025-11-25T20:19:51 update: added /Ultraviolence - Lana Del Rey - Ultraviolence.mp3
+2025-11-25T20:20:30 update: added /Shades of Cool - Lana Del Rey - Ultraviolence.mp3
+2025-11-25T21:41:23 exception: No such directory
+2025-11-25T21:41:25 exception: No such directory
+2025-11-25T21:41:26 exception: No such directory
+2025-11-25T21:41:27 exception: No such directory
+2025-11-25T21:41:29 exception: No such directory
+2025-11-25T21:41:30 exception: No such directory
+2025-11-25T21:41:32 exception: No such directory
+2025-11-25T21:41:33 exception: No such directory
+2025-11-25T21:41:35 exception: No such directory
+2025-11-25T21:41:36 exception: No such directory
+2025-11-25T21:41:37 exception: No such directory
+2025-11-25T21:43:43 update: updating /Cruel World - Lana Del Rey - Ultraviolence.mp3
+2025-11-25T21:43:53 update: updating /Ultraviolence - Lana Del Rey - Ultraviolence.mp3
+2025-11-25T21:44:15 update: updating /Shades of Cool - Lana Del Rey - Ultraviolence.mp3
+2025-11-25T21:45:25 update: added /Brooklyn Baby - Lana Del Rey - Ultraviolence.mp3
+2025-11-25T21:46:02 update: added /West Coast - Lana Del Rey - Ultraviolence.mp3
+2025-11-25T21:46:53 update: added /Sad Girl - Lana Del Rey - Ultraviolence.mp3
+2025-11-25T21:47:21 update: added /Pretty When You Cry - Lana Del Rey - Ultraviolence.mp3
+2025-11-25T21:48:08 update: added /Money Power Glory - Lana Del Rey - Ultraviolence.mp3
+2025-11-25T21:48:15 exception: No such directory
+2025-11-25T21:48:41 update: added /Old Money - Lana Del Rey - Ultraviolence.mp3
+2025-11-25T21:49:04 update: added /The Other Woman - Lana Del Rey - Ultraviolence.mp3
+2025-11-25T21:49:35 update: added /Black Beauty - Lana Del Rey - Ultraviolence.mp3
+2025-11-25T21:49:56 update: added /Guns and Roses - Lana Del Rey - Ultraviolence.mp3
+2025-11-25T21:50:43 update: added /Florida Kilos - Lana Del Rey - Ultraviolence.mp3
+2025-11-25T23:09:14 player: played "Old Money - Lana Del Rey - Ultraviolence.mp3"
+2025-11-26T16:17:07 player: played "Old Money - Lana Del Rey - Ultraviolence.mp3"
+2025-11-26T19:07:40 player: played "Old Money - Lana Del Rey - Ultraviolence.mp3"
+2025-11-26T19:07:48 update: added /UYUNI - Rels B - afroLOVA 25'.webm
+2025-11-26T19:07:48 mpg123: mpg123_getformat() failed: Message: I am done with this track.
+2025-11-26T19:07:48 mpg123: mpg123_getformat() failed: Message: I am done with this track.
+2025-11-26T19:07:48 ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+2025-11-26T19:07:48 ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+2025-11-26T19:07:48 mpg123: mpg123_getformat() failed: Message: I am done with this track.
+2025-11-26T19:07:48 mpg123: mpg123_getformat() failed: Message: I am done with this track.
+2025-11-26T19:07:48 ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+2025-11-26T19:07:48 ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-11-26T19:07:50 update: added /UYUNI - Rels B - afroLOVA 25'.mp3
+2025-11-26T19:07:51 update: updating /UYUNI - Rels B - afroLOVA 25'.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-11-26T19:07:52 update: updating /UYUNI - Rels B - afroLOVA 25'.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-11-26T19:07:53 update: updating /UYUNI - Rels B - afroLOVA 25'.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-11-26T19:07:54 update: updating /UYUNI - Rels B - afroLOVA 25'.mp3
+2025-11-26T19:07:54 update: removing UYUNI - Rels B - afroLOVA 25'.webm
+2025-11-26T19:08:20 update: added /Mis Días A Tu Suerte - Rels B - afroLOVA 25'.mp3
+2025-11-26T19:08:52 update: added /Carita Angelikal - Rels B ft. Kapo - afroLOVA 25'.mp3
+2025-11-26T19:09:20 update: added /LA PROPUESTA - Rels B ft. Los Sufridos - afroLOVA 25'.mp3
+2025-11-26T19:09:45 update: added /TU VAS SIN (fav) - Rels B - afroLOVA 25'.mp3
+2025-11-26T19:10:15 update: added /De Dónde Es???? - Rels B - afroLOVA 25'.mp3
+2025-11-26T19:10:33 player: played "UYUNI - Rels B - afroLOVA 25'.mp3"
+2025-11-26T19:10:43 update: added /LovioLOVIO - Rels B ft. Thisizlondon - afroLOVA 25'.mp3
+2025-11-26T19:11:03 update: added /vuelve contigo - Rels B - afroLOVA 25'.mp3
+2025-11-26T19:11:22 update: added /que todo siga igual,,, o que vaya mejor - Rels B - afroLOVA 25'.mp3
+2025-11-26T19:43:08 player: played "1979 - Mareux - Decade.mp3"
+2025-11-26T19:45:50 player: played "Sail - Mareux - Decade.mp3"
+2025-11-26T19:50:36 player: played "Cold Summer - Mareux - Decade.mp3"
+2025-11-26T19:53:30 player: played "Mis Días A Tu Suerte - Rels B - afroLOVA 25'.mp3"
+2025-11-26T19:57:59 player: played "Carita Angelikal - Rels B ft. Kapo - afroLOVA 25'.mp3"
+2025-11-26T20:00:37 player: played "LA PROPUESTA - Rels B ft. Los Sufridos - afroLOVA 25'.mp3"
+2025-11-26T20:02:27 player: played "TU VAS SIN (fav) - Rels B - afroLOVA 25'.mp3"
+2025-11-26T20:04:39 player: played "De Dónde Es???? - Rels B - afroLOVA 25'.mp3"
+2025-11-26T20:07:19 player: played "LovioLOVIO - Rels B ft. Thisizlondon - afroLOVA 25'.mp3"
+2025-11-26T20:10:10 player: played "vuelve contigo - Rels B - afroLOVA 25'.mp3"
+2025-11-26T20:13:06 player: played "que todo siga igual,,, o que vaya mejor - Rels B - afroLOVA 25'.mp3"
+2025-11-26T20:20:23 update: added /A New Kind Of Love - Frou Frou - asterik.mp3
+2025-11-26T20:28:29 player: played "Fakesnow - R. Missing.mp3"
+2025-11-26T20:50:09 player: played "Pretty When You Cry - Lana Del Rey - Ultraviolence.mp3"
+2025-11-26T20:51:46 player: played "The Other Woman - Lana Del Rey - Ultraviolence.mp3"
+2025-11-26T20:58:49 player: played "Cruel World - Lana Del Rey - Ultraviolence.mp3"
+2025-11-26T21:15:47 player: played "Florida Kilos - Lana Del Rey - Ultraviolence.mp3"
+2025-11-27T18:05:57 player: played "UYUNI - Rels B - afroLOVA 25'.mp3"
+2025-11-27T18:08:21 player: played "Mis Días A Tu Suerte - Rels B - afroLOVA 25'.mp3"
+2025-11-27T18:11:53 player: played "Carita Angelikal - Rels B ft. Kapo - afroLOVA 25'.mp3"
+2025-11-27T18:14:31 player: played "LA PROPUESTA - Rels B ft. Los Sufridos - afroLOVA 25'.mp3"
+2025-11-27T18:16:21 player: played "TU VAS SIN (fav) - Rels B - afroLOVA 25'.mp3"
+2025-11-27T18:18:33 player: played "De Dónde Es???? - Rels B - afroLOVA 25'.mp3"
+2025-11-27T18:21:13 player: played "LovioLOVIO - Rels B ft. Thisizlondon - afroLOVA 25'.mp3"
+2025-11-27T18:24:04 player: played "vuelve contigo - Rels B - afroLOVA 25'.mp3"
+2025-11-27T18:27:01 player: played "que todo siga igual,,, o que vaya mejor - Rels B - afroLOVA 25'.mp3"
+2025-11-28T18:40:40 player: played "Cold Summer - Mareux - Decade.mp3"
+2025-11-28T23:19:15 player: played "1979 - Mareux - Decade.mp3"
+2025-11-28T23:21:58 player: played "Sail - Mareux - Decade.mp3"
+2025-11-28T23:26:41 player: played "Cold Summer - Mareux - Decade.mp3"
+2025-11-29T17:19:25 player: played "1979 - Mareux - Decade.mp3"
+2025-11-29T17:22:08 player: played "Sail - Mareux - Decade.mp3"
+2025-11-29T20:14:54 player: played "Cold Summer - Mareux - Decade.mp3"
+2025-11-29T21:59:49 player: played "Cold Summer - Mareux - Decade.mp3"

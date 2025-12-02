@@ -1,0 +1,223 @@
+{
+        "layer": "top",
+        "margin": "0",
+        "position": "top",
+        "reload_style_on_change": true,
+        // "modules-left": ["custom/apple", "mpd", "custom/cava"],
+        "modules-left": ["hyprland/workspaces"],
+        // "modules-center": ["hyprland/workspaces"],
+        "modules-center": [],
+        "modules-right": ["tray", "temperature", "network", "cpu", "memory", "battery", "clock"],
+        "hyprland/workspaces": {
+            "format": "{icon}",
+            "format-icons": {
+                "4":"4",
+                "5":"5",
+                "6":"6",
+                "7":"7",
+                "8":"8",
+                "9":"9",
+                "10":"10",
+                "95":" ",
+                "97":" ",
+                "default": "",
+                "empty": ""
+            },
+            "persistent-workspaces": {
+                "*": [ 1,2,3,95,97]
+            }
+        },
+
+      "niri/workspaces": {
+          "format": "{icon}",
+          "format-icons": {
+            "active": "",
+            "default": "",
+            "empty": ""
+          }
+      },
+        "custom/notification": {
+            "tooltip": false,
+            "format": " ",
+            "on-click": "swaync-client -t -sw",
+            "escape": true
+        },
+
+        "clock": {
+            "format": "{:%a %d %b %I:%M %p}",
+            "interval": 1,   
+            "tooltip-format": "<big><big><tt>{calendar}</tt></big></big>",
+            "calendar": {
+                "format": {
+                    "today": "<span color='#fAfBfC'><b>{}</b></span>"
+                }
+            },
+            "actions": {
+                "on-click-right": "shift_down",
+                "on-click": "shift_up"
+            },
+        },
+
+        "network": {
+            "format-wifi": "{signalStrength}%  ",
+            "format-ethernet":" ",
+            "format-disconnected": "  ",
+            "tooltip-format-disconnected": "Error",
+            "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+            "tooltip-format-ethernet": "{ifname} 🖧 ",
+            "on-click": "foot nmtui",
+        },
+        "bluetooth": {
+	    "format": "󰂯",
+            "format-on": "󰂯",
+            "format-off": "BT-off",
+            "format-disabled": "󰂲",
+            "format-connected-battery": "󰂯",
+            "format-alt": "󰂯",
+            "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections}",
+            "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections}\n\n{device_enumerate}",
+            "tooltip-format-enumerate-connected": "{device_alias}\n{device_address}",
+            "tooltip-format-enumerate-connected-battery": "{device_alias}\n{device_address}\n{device_battery_percentage}%",
+            "on-click": "blueman-manager"
+        }, 
+
+        "battery": {
+            "interval":30,
+            "states": {
+                "full": 100,
+                "good": 95,
+                "warning": 20,
+                "critical": 5
+            },
+            "format": "{capacity}%  ",
+        },
+
+        "custom/pacman": {
+            "format": "󰅢 {}",
+            "interval": 30,   
+            "exec": "checkupdates | wc -l",
+            "exec-if": "exit 0",
+            "on-click": "foot sh -c 'yay -Syu; echo Done - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar",
+            "signal": 8,
+            "tooltip": false,
+        },
+        "custom/expand": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/endpoint":{
+            "format": "|",
+            "tooltip": false
+        },
+        "group/expand": {
+            "orientation": "horizontal",
+            "drawer": {
+                "transition-duration": 600,
+                "transition-to-left": true,
+                "click-to-reveal": true
+            },
+            "modules": ["custom/expand", "custom/colorpicker","cpu","memory","temperature","custom/endpoint"],
+        },
+        "custom/colorpicker": {
+            "format": "{}",
+            "return-type": "json",
+            "interval": "once",
+            "exec": "~/.config/waybar/scripts/colorpicker.sh -j",
+            "on-click": "~/.config/waybar/scripts/colorpicker.sh",
+            "signal": 1
+        },
+
+        "cpu": {
+            "format": "{usage}%  ",
+            "tooltip": true,
+            "on-click": "foot auto-cpufreq --stats",
+        },
+
+        "memory": {
+            "format": "{percentage}%  ",
+            "on-click": "foot btm",
+
+        },
+
+        "temperature": {
+            "critical-threshold": 80,
+            "format": "{temperatureC}ºC ",
+        },
+
+        "tray": {
+            "icon-size": 14,
+            "spacing": 10,
+	    "icon-blacklist": ["blueman", "blueman-applet"]
+        },
+	"custom/apple": {
+		"format":"  ",
+		"tooltip": true,
+		"on-click": "wlogout",
+	},
+	"custom/spotlight": {
+		"format":" ",
+		"tooltip": false,
+		"on-click": "anyrun",
+	},
+	"custom/finder": {
+		"format": "  󰀶 ",
+		"tooltip": false,
+		"on-click": "thunar"
+	},
+    "custom/quick_settings": {
+        "format": "<span line_height='0.3'><span>󰨙 </span>\r<span><big>󰔡 </big></span></span>",
+        "tooltip": false,
+        "on-click": "eww open --toggle control-center"
+    },
+        
+    "custom/mountainbg": {
+        "format": "󰅟 ",
+        "tooltip": false,
+        "on-click": "bash -c 'swww img --transition-type wipe --transition-angle 30 --transition-step 90 /home/gero/Documentos/wallpapers/mountains.jpg && sed -i \"s|^\\$wallpaper = .*|\\$wallpaper = /home/gero/Documentos/wallpapers/mountains.jpg|\" $HOME/.config/hypr/hyprlock.conf'"
+    },
+    
+    "custom/treebg": {
+        "format": " ",
+        "tooltip": false,
+        "on-click": "bash -c 'swww img --transition-type wipe --transition-angle 30 --transition-step 90 /home/gero/Documentos/wallpapers/forest.jpg && sed -i \"s|^\\$wallpaper = .*|\\$wallpaper = /home/gero/Documentos/wallpapers/forest.jpg|\" $HOME/.config/hypr/hyprlock.conf'"
+    },
+    
+    "custom/flowerbg": {
+        "format": "󰴈 ",
+        "tooltip": false,
+        "on-click": "bash -c 'swww img --transition-type wipe --transition-angle 30 --transition-step 90 /home/gero/Documentos/wallpapers/flowers.jpg && sed -i \"s|^\\$wallpaper = .*|\\$wallpaper = /home/gero/Documentos/wallpapers/flowers.jpg|\" $HOME/.config/hypr/hyprlock.conf'"
+    },
+
+    "custom/system_info": {
+        "format": "󰘚 ",
+        "tooltip": false,
+        "on-click": "foot --title system_info -- bash -c \"fastfetch; read -p 'Press Enter to close...'\""
+    },
+
+    "mpd": {
+        "tooltip": false,
+        "format": "{artist} - {title}",
+        "format-disconnected": "Disconnected",
+        "format-stopped": "",
+        "unknown-tag": "N/A",
+        "interval": 5,
+        "consume-icons": {
+            "on": " "
+        },
+        "random-icons": {
+            "off": "<span color=\"#f53c3c\"> </span> ",
+            "on": " "
+        },
+        "repeat-icons": {
+            "on": " "
+        },
+        "single-icons": {
+            "on": " "
+        },
+        "state-icons": {
+            "paused": "",
+            "playing": ""
+        },
+    }
+
+} 

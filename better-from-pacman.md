@@ -1,0 +1,11 @@
+hyprland
+hyprlock
+hypridle
+hyprpicker
+hyprshot
+waybar
+wofi
+dunst
+swww
+wl-clipboard
+wlogout

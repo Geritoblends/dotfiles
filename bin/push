@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Check if commit message was provided
+if [ $# -eq 0 ]; then
+    echo "Usage: push \"your commit message\""
+    echo "Example: push \"improved schema\""
+    exit 1
+fi
+
+# Get the commit message (all arguments combined)
+commit_message="$*"
+
+echo "Adding files..."
+git add .
+
+echo "Committing with message: \"$commit_message\""
+git commit -m "$commit_message"
+
+if [ $? -eq 0 ]; then
+    echo "Pushing to remote..."
+    git push
+    
+    if [ $? -eq 0 ]; then
+        echo "✅ Successfully pushed: \"$commit_message\""
+    else
+        echo "❌ Failed to push to remote"
+        exit 1
+    fi
+else
+    echo "❌ Failed to commit (maybe no changes?)"
+    exit 1
+fi

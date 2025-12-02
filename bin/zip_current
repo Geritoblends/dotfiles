@@ -1,0 +1,13 @@
+#!/bin/bash
+# zip_current: zips the current folder into ../current_folder.zip
+
+# Get the name of the current folder
+folder_name=$(basename "$PWD")
+
+# Set the output zip path
+output="../${folder_name}.zip"
+
+# Zip the current folder into the output path
+zip -r "$output" .
+
+echo "Zipped '$folder_name' to '$output'"

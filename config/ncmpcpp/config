@@ -1,0 +1,10 @@
+ncmpcpp_directory = "~/.config/ncmpcpp"
+mpd_host = "localhost"
+mpd_port = "6600"
+mpd_music_dir = "~/Music"
+
+# Optional UI tweaks
+user_interface = "classic"
+browser_display_mode = "columns"
+search_engine_display_mode = "columns"
+playlist_display_mode = "columns"

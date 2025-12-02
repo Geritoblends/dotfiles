@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# Script: mprompt
+# Description: Generates a structured prompt for the AI assistant 
+#              to fetch an album tracklist and format it for the mfetch script.
+# Usage: mprompt "<Album Name>" "<Artist Name>"
+# Requires: wl-copy, xclip, or pbcopy for clipboard functionality.
+
+# Check if necessary arguments are provided
+if [ "$#" -ne 2 ]; then
+    echo "❌ Error: Invalid usage." >&2
+    echo "Usage: mprompt \"<Album Name>\" \"<Artist Name>\"" >&2
+    exit 1
+fi
+
+album_name="$1"
+artist_name="$2"
+
+# Define the core structured prompt, substituting the variables
+# The prompt is constructed exactly how you asked for it.
+prompt_template="For the album ${album_name} by ${artist_name}, please perform these steps:
+
+Search for the full tracklist.
+Format the entire tracklist into a single, multi-line shell command using your mfetch script.
+The required syntax for each line is: mfetch \"Title1 - Artist1 - AlbumA\" \"Title2 - Artist1 - AlbumA\"
+If a track has a feature, include the featured artist with the main artist (e.g., Artist ft. Feature)."
+
+# --- Copy to Clipboard Logic ---
+
+if command -v wl-copy &> /dev/null; then
+    # 1. Use wl-copy for Wayland environments
+    echo "$prompt_template" | wl-copy
+    echo "✅ Prompt for '${album_name}' copied to clipboard (using wl-copy)."
+elif command -v xclip &> /dev/null; then
+    # 2. Use xclip for X11 environments
+    echo "$prompt_template" | xclip -selection clipboard
+    echo "✅ Prompt for '${album_name}' copied to clipboard (using xclip)."
+elif command -v pbcopy &> /dev/null; then
+    # 3. Use pbcopy for macOS environments
+    echo "$prompt_template" | pbcopy
+    echo "✅ Prompt for '${album_name}' copied to clipboard (using pbcopy)."
+else
+    # 4. Fallback if no clipboard utility is found
+    echo "🛑 Clipboard utility (wl-copy, xclip, or pbcopy) not found." >&2
+    echo -e "You need to copy the following prompt manually:\n---\n$prompt_template\n---" >&2
+    exit 1
+fi
