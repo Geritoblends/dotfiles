@@ -9,3 +9,4 @@ dunst
 swww
 wl-clipboard
 wlogout
+firefox

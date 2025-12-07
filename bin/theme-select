@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Paths (Source of Truth)
+DOTS_DIR="$HOME/nix-dots"
+SCHEME_DIR="$DOTS_DIR/config/wal/colorschemes"
+LAYOUT_DIR="$DOTS_DIR/layouts"
+
+# 1. Select Color Scheme
+# List .json files, strip extension
+COLORSCHEME=$(ls "$SCHEME_DIR" | grep ".json" | sed 's/.json//' | fuzzel --dmenu --prompt="🎨 Theme: " -l 10)
+
+# Exit if cancelled
+if [ -z "$COLORSCHEME" ]; then
+    exit 0
+fi
+
+# 2. Select Layout
+# List folders in the layouts directory
+LAYOUT=$(ls -d "$LAYOUT_DIR"/*/ | xargs -n 1 basename | fuzzel --dmenu --prompt="📐 Layout: " -l 5)
+
+# 3. Execution
+if [ -z "$LAYOUT" ]; then
+    # If user cancels layout, run with just color (theme script defaults to 'default')
+    theme "$COLORSCHEME"
+else
+    theme "$COLORSCHEME" "$LAYOUT"
+fi

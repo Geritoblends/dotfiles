@@ -7,109 +7,86 @@ let
   localBin    = "${config.home.homeDirectory}/.local/bin";
 in
 {
+  nixpkgs.config.allowUnfree = true;
+
   home.packages = with pkgs; [
     # --- 🛠 Core Utils ---
-    git
-    curl
-    wget
-    unzip
-    zip
-    p7zip      # 7zip
-    ripgrep    # grep replacement
-    fd         # find replacement
-    fzf        # fuzzy finder
-    bat        # cat replacement
-    eza        # ls replacement (modern)
-    jq         # json processor
-    yazi       # file manager (you had this)
-    zoxide     # cd replacement
-
+    git curl wget unzip zip p7zip ripgrep fd fzf bat eza jq zoxide
+    
     # --- 🌐 Network ---
-    bind       # for 'dig'
-    nmap
-    netcat-openbsd
-    httpie     # better curl
-    whois
+    bind nmap netcat-openbsd httpie whois
     
     # --- 💻 Dev & Build ---
-    gcc
-    gnumake
-    just       # command runner
-    mold       # fast linker
-    git-lfs
-    gh         # github cli
-    glab       # gitlab cli
+    gcc gnumake just mold git-lfs gh glab
     
-    # --- 🐍 Languages & Runtimes ---
-    nodejs_22  # Latest stable node
-    deno
-    python3
-    rustup
+    # --- 🐍 Languages ---
+    nodejs_22 deno python3 rustup
     
     # --- 📊 Monitoring ---
-    htop
-    bottom     # btm
-    ncdu       # disk usage
+    htop bottom ncdu
     
     # --- ⌨️ Multiplexers ---
-    tmux
-    zellij
+    tmux zellij
     
     # --- 🧸 Fun ---
-    fastfetch
-    cmatrix
-    pipes-rs   # Rust version of pipes.sh
+    fastfetch cmatrix pipes-rs
   ];
 
+  # 3. PATH
   home.sessionPath = [ localBin ];
 
+  # 4. THE MAGIC LINKING SCRIPT
+  # This links ~/nix-dots/config/* to ~/.config/* as MUTABLE symlinks.
+  # This allows your 'theme' script to modify files inside ~/.config/hypr/ etc.
   home.activation.symlinkDotfiles = lib.hm.dag.entryAfter ["writeBoundary"] ''
-    # 1. Link Bash & Bin (Previous step)
+    # A. Link Bash Scripts
     if [ -d "${dotfilesDir}/bash" ]; then
       $DRY_RUN_CMD rm -rf "${bashrcDir}"
       $DRY_RUN_CMD ln -sfn "${dotfilesDir}/bash" "${bashrcDir}"
     fi
 
+    # B. Link Binaries
     if [ -d "${dotfilesDir}/bin" ]; then
       $DRY_RUN_CMD mkdir -p "${config.home.homeDirectory}/.local"
       $DRY_RUN_CMD rm -rf "${localBin}"
       $DRY_RUN_CMD ln -sfn "${dotfilesDir}/bin" "${localBin}"
     fi
 
-    # 2. Link ALL Config folders (The New Magic)
-    # Loops through ~/nix-dots/config/* and links them to ~/.config/*
+    # C. Link Config Folders (The Hybrid Fix)
     if [ -d "${dotfilesDir}/config" ]; then
       echo "🔗 Linking configs from ${dotfilesDir}/config..."
       
       for dir in "${dotfilesDir}/config"/*; do
-        # Get the folder name (e.g., "nvim", "hypr")
         base=$(basename "$dir")
         target="${configDir}/$base"
         
-        # If target exists and is a directory (but not a symlink), back it up
+        # Don't link 'wal' folder if it exists, usually we want that local only
+        if [ "$base" == "wal" ]; then continue; fi
+
+        # Backup existing directories if they are NOT symlinks
         if [ -d "$target" ] && [ ! -L "$target" ]; then
           echo "📦 Backing up existing $base to $base.bak"
           $DRY_RUN_CMD mv "$target" "$target.bak"
         fi
 
-        # Create the symlink (force overwrite if it's already a link)
+        # Create the link: ~/.config/name -> ~/nix-dots/config/name
         $DRY_RUN_CMD ln -sfn "$dir" "$target"
       done
     fi
   '';
 
+  # 5. BASH INIT
   programs.bash = {
     enable = true;
     initExtra = ''
-      # Source GLOBAL scripts from the symlink
+      # Source GLOBAL scripts
       if [ -d "$HOME/.bashrc.d/global" ]; then
         for f in "$HOME/.bashrc.d/global"/*.sh; do source "$f"; done
       fi
     '';
   };
 
-  xdg.configFile."nvim".source = ./config/nvim;
-
+  # 6. NVIM (Example of a handled config)
   home.sessionVariables = {
     EDITOR = "nvim";
     VISUAL = "nvim";

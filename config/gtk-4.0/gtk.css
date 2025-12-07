@@ -1,20 +1,14 @@
-@define-color theme_bg_color #202020;
-@define-color theme_fg_color #ebdbb2;
-
-:root {
-    --bg-primary: #202020;
-    --fg-primary: #ebdbb2;
-}
+@import url("/home/gero/.cache/wal/colors-gtk.css");
 
 window {
-    background-color: var(--bg-primary);
-    color: var(--fg-primary);
+  background-color: @bg;
+  color: @fg;
 }
 
 /* Then use variables throughout your theme */
 headerbar {
-    background-color: var(--bg-primary);
-    color: var(--fg-primary);
+  background-color: @bg;
+  color: @fg;
 }
 /* Target common UI containers */
 window,
@@ -23,64 +17,65 @@ menu,
 toolbar,
 headerbar,
 sidebar {
-    background-color: #202020;
-    color: #ebdbb2;
+  background-color: @bg;
+  color: @fg;
 }
 
-popover, dialog {
-    background-color: transparent;
+popover,
+dialog {
+  background-color: @bg;
+  color: @fg;
 }
 
 /* Common GTK widgets */
 .background {
-    background-color: #202020;
-    color: #ebdbb2;
+  background-color: @bg;
+  color: @fg;
 }
 
 .view {
-    background-color: #202020;
-    color: #ebdbb2;
+  background-color: @bg;
+  color: @fg;
 }
 
 listbox,
 .listbox {
-    background-color: #202020;
-    color: #ebdbb2;
+  background-color: @bg;
+  color: @fg;
 }
 
 listbox row,
 .listbox row {
-    background-color: #202020;
-    color: #ebdbb2;
+  background-color: @bg;
+  color: @fg;
 }
 
 /* Handle row selection states */
 listbox row:selected,
 .listbox row:selected {
-    background-color: #9ccfd8; /* Rose Pine foam */
-    color: #202020;
+  background-color: @bg; /* Rose Pine foam */
+  color: @bg;
 }
 
 listbox row:hover,
 .listbox row:hover {
-    background-color: #26233a; /* Rose Pine surface */
+  background-color: @bg; /* Rose Pine surface */
 }
 
 revealer:backdrop {
-    background-color: #202020;
-    color: #ebdbb2;
+  background-color: @bg;
+  color: @fg;
 }
 
 /* Fix unfocused window state */
 window:backdrop centerbox,
 .background:backdrop centerbox {
-    background-color: #202020; /* Keep same color when unfocused */
-    color: #908caa; /* Slightly dimmed text for unfocused state */
+  background-color: @bg; /* Keep same color when unfocused */
+  color: @base04; /* Slightly dimmed text for unfocused state */
 }
 
 /* Also target any child elements */
 centerbox > * {
-    background-color: inherit;
-    color: inherit;
+  background-color: inherit;
+  color: inherit;
 }
-

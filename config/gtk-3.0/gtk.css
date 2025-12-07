@@ -1,2 +1,78 @@
+window {
+  background-color: @background;
+  color: @foreground;
+}
 
+/* Then use variables throughout your theme */
+headerbar {
+  background-color: @background;
+  color: @foreground;
+}
+/* Target common UI containers */
+window,
+menu,
+.navigation-sidebar,
+toolbar,
+headerbar,
+sidebar {
+  background-color: @background;
+  color: @foreground;
+}
 
+popover,
+dialog {
+  background-color: transparent;
+}
+
+/* Common GTK widgets */
+.background {
+  background-color: @background;
+  color: @foreground;
+}
+
+.view {
+  background-color: @background;
+  color: @foreground;
+}
+
+listbox,
+.listbox {
+  background-color: @background;
+  color: @foreground;
+}
+
+listbox row,
+.listbox row {
+  background-color: @background;
+  color: @foreground;
+}
+
+/* Handle row selection states */
+listbox row:selected,
+.listbox row:selected {
+  background-color: @background; /* Rose Pine foam */
+  color: @background;
+}
+
+listbox row:hover,
+.listbox row:hover {
+  background-color: @background; /* Rose Pine surface */
+}
+
+revealer:backdrop {
+  background-color: @background;
+  color: @foreground;
+}
+
+/* Fix unfocused window state */
+window:backdrop centerbox,
+.background:backdrop centerbox {
+  background-color: @background; /* Keep same color when unfocused */
+  color: @base04; /* Slightly dimmed text for unfocused state */
+}
+
+/* Also target any child elements */
+centerbox > * {
+  background-color: inherit;
+  color: inherit;
+}

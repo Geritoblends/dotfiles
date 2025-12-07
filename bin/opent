@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+
+# Check for required dependencies
+if ! command -v rg &> /dev/null || ! command -v fzf &> /dev/null; then
+    echo "Error: This script requires 'rg' (ripgrep) and 'fzf' installed."
+    exit 1
+fi
+
+# 1. Logic: Determine search mode
+# If user provides arguments, use rg -l (search file CONTENT).
+# If no arguments, use rg --files (search file NAMES).
+QUERY="$*"
+
+if [ -n "$QUERY" ]; then
+    # Mode A: Search Content
+    # We use '|| true' to prevent script exit if rg finds nothing
+    CMD="rg --files-with-matches --smart-case --no-messages '$QUERY' || true"
+    
+    # The preview command highlights the match inside the file
+    PREVIEW="rg --pretty --context 5 --smart-case '$QUERY' {}"
+else
+    # Mode B: Search Filenames (Default fallback)
+    CMD="rg --files --no-messages"
+    
+    # The preview command just shows the file content (uses bat if available, else cat)
+    if command -v bat &> /dev/null; then
+        PREVIEW="bat --style=numbers --color=always {}"
+    else
+        PREVIEW="cat {}"
+    fi
+fi
+
+# 2. Execution: FZF Selection
+# --multi: Allows selecting multiple files (use TAB)
+# --preview: Shows the context/content logic defined above
+SELECTED=$(eval "$CMD" | fzf \
+    --multi \
+    --header "Press TAB to multi-select | ENTER to open" \
+    --preview "$PREVIEW" \
+    --preview-window=right:60%:wrap)
+
+# 3. Final Action: Open files
+# If files were selected, open them with the system default handler
+if [ -n "$SELECTED" ]; then
+    # We use a while loop to handle filenames with spaces correctly
+    echo "$SELECTED" | while IFS= read -r file; do
+        nohup xdg-open "$file" >/dev/null 2>&1 &
+    done
+fi

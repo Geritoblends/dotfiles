@@ -1,0 +1,4 @@
+#!/bin/bash
+for i in $(seq "$1"); do
+    brightnessctl -q -d smc::kbd_backlight set 5+
+done

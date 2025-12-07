@@ -1,0 +1,22 @@
+@define-color base00 {background};
+@define-color bg01 {color0};
+@define-color base02 {color8};
+@define-color bg03 {color8};
+@define-color base04 {color7};
+@define-color base05 {foreground};
+@define-color base06 {color15};
+@define-color base07 {color7};
+
+@define-color red {color1};
+@define-color orange {color9};
+@define-color yellow {color3};
+@define-color green {color2};
+@define-color blue {color4};
+@define-color cyan {color6};
+@define-color bright_cyan {color6};
+@define-color magenta {color5};
+@define-color bright_magenta {color5};
+
+@define-color fg {foreground};
+@define-color bg {background};
+@define-color accent {color5};

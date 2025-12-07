@@ -8,11 +8,6 @@ toggle_pad() {
     fi
 }
 
-reload_wifi() {
-    sudo rmmod wl;
-    sudo modprobe wl;
-}
-
 mkcd() {
     mkdir $1 && cd $1 
 }
@@ -196,37 +191,6 @@ mvd() {
     IFS=$SAVEIFS
 }
 
-setup_ec2() {
-    if [ -z "$1" ]; then
-        echo "Usage: setup_ec2 <ec2-ip-or-dns> [user]"
-        return 1
-    fi
-
-    local TARGET="$1"
-    local USER="${2:-admin}"
-
-    echo "Syncing configs to $USER@$TARGET ..."
-
-    # Ensure dirs exist remotely
-    ssh "$USER@$TARGET" "mkdir -p ~/.config ~/.bashrc.d ~/cloud"
-
-    # Copy dotfiles + cloud scripts
-    scp -r ~/.bashrc.d            "$USER@$TARGET:~/"
-    scp -r ~/.config/nvim         "$USER@$TARGET:~/.config/"
-    scp       ~/cloud/setup.sh    "$USER@$TARGET:~/cloud/"
-    scp       ~/cloud/prompt.sh   "$USER@$TARGET:~/cloud/"
-
-    echo "Replacing remote prompt.sh…"
-
-    # Overwrite remote ~/.bashrc.d/prompt.sh with your ~/cloud/prompt.sh
-    ssh "$USER@$TARGET" "cp ~/cloud/prompt.sh ~/.bashrc.d/prompt.sh"
-
-    echo "Executing setup.sh on remote..."
-    ssh "$USER@$TARGET" "bash ~/cloud/setup.sh"
-
-    echo "Done."
-}
-
 ec2() {
     if [ -z "$1" ]; then
         echo "Usage: ec2 <ec2-ip-or-dns> [user]"
@@ -280,7 +244,7 @@ setup_ec2_nix() {
         # Apply Configuration
         # We use --impure if you use absolute paths, but usually standard run is:
         cd ~/nix-dots
-        nix run home-manager/master -- switch --flake .#$USER
+        nix run home-manager/master -- switch --flake .#remote
     "
 }
 
@@ -314,4 +278,53 @@ lscriptf() {
     mkdir -p "$scripts_dir"
     find "$scripts_dir" -type f | fzf --preview 'cat {}' | xargs -r nvim
 
+}
+
+setup_local_nix() {
+    echo "🚀 Activating local Home Manager configuration..."
+    
+    # 1. Ensure we are in the correct directory
+    if [ ! -d ~/nix-dots ]; then
+        echo "Error: ~/nix-dots directory not found."
+        return 1
+    fi
+    cd ~/nix-dots
+    
+    # 2. Pull latest changes
+    echo "Pulling latest changes..."
+    git pull
+    
+    # 3. Apply Local Configuration (The Switch)
+    echo "Running Home Manager switch..."
+    nix run home-manager/master -- switch --flake .#local
+
+    # 4. Post-Install Bridge Fixes (Crucial for updates!)
+    if command -v pywalfox &> /dev/null; then
+        echo "🦊 Re-establishing Pywalfox Native Messenger bridge..."
+        pywalfox install
+    else
+        echo "Pywalfox executable not found. Skip bridge setup."
+    fi
+    
+    echo "✅ Local setup complete."
+}
+
+lcd() {
+    local layouts_dir="$HOME/nix-dots/layouts"
+
+    # Check if the layouts directory exists
+    if [ ! -d "$layouts_dir" ]; then
+        echo "Error: Directory $layouts_dir not found."
+        return 1
+    fi
+
+    # Find directories -> piping to fzf -> capturing selection
+    local target
+    target=$(find "$layouts_dir" -mindepth 1 -maxdepth 1 -type d | \
+             fzf --height=20% --layout=reverse --border --prompt="Go to Layout > ")
+
+    # If a directory was selected, cd into it
+    if [ -n "$target" ]; then
+        cd "$target" || return 1
+    fi
 }

@@ -1,8 +1,7 @@
 sw_volume: 100
 audio_device_state:1:MPD Audio
-state: pause
-current: 8
-time: 212.601
+state: stop
+current: 0
 random: 0
 repeat: 0
 single: 0
@@ -12,13 +11,8 @@ mixrampdb: 0
 mixrampdelay: -1
 lastloadedplaylist: Decade
 playlist_begin
-0:1979 - Mareux - Decade.mp3
-1:Sail - Mareux - Decade.mp3
-2:Cold Summer - Mareux - Decade.mp3
-3:1979 - Mareux - Decade.mp3
-4:Sail - Mareux - Decade.mp3
-5:Cold Summer - Mareux - Decade.mp3
-6:1979 - Mareux - Decade.mp3
-7:Sail - Mareux - Decade.mp3
-8:Cold Summer - Mareux - Decade.mp3
+0:Prodigy - Mareux - Nonstop Romance.mp3
+1:1979 - Mareux - Decade.mp3
+2:Sail - Mareux - Decade.mp3
+3:Cold Summer - Mareux - Decade.mp3
 playlist_end

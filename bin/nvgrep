@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+# 1. Grab the Search Query
+# From argument ($1) or Clipboard (Primary Selection)
+if [ -n "$1" ]; then
+    QUERY="$*"
+else
+    # wl-paste for Wayland. Use 'xclip -o' if on X11.
+    QUERY=$(wl-paste --primary --no-newline 2>/dev/null)
+fi
+
+# Safety Check
+if [ -z "$QUERY" ]; then
+    echo "Nothing to search for."
+    exit 1
+fi
+
+# 2. The Heavy Lifting
+# -l: List filenames only
+# --null: Output filenames separated by a null byte (handles spaces in filenames safely)
+# --fixed-strings: Treats input as text, not regex (No crashes on brackets!)
+# --smart-case: Insensitive unless you use capitals
+#
+# xargs flags:
+# -0: Read null-terminated filenames (from rg --null)
+# -r: Do not run nvim if no files were found
+# -o: "Open TTY" - Necessary to allow nvim to take over the terminal interactively
+#
+# nvim flags:
+# -c: Executes a command after loading. We search (/) for the query automatically.
+rg --files-with-matches --null --fixed-strings --smart-case "$QUERY" | \
+    xargs -0 -r -o nvim -c "/$QUERY"

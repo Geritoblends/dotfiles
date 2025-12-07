@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+
+# 1. Input Logic: Arg vs. Mouse Selection
+# If you provide an argument, use it.
+# If not, grab the PRIMARY selection (highlighted text) from Wayland.
+if [ -n "$1" ]; then
+    QUERY="$*"
+else
+    # We strip newlines to keep it a single search string
+    # We assume Wayland (wl-paste). If you are on X11, use 'xclip -o'
+    QUERY=$(wl-paste --primary --no-newline 2>/dev/null)
+fi
+
+# Safety check: If clipboard is empty, exit
+if [ -z "$QUERY" ]; then
+    echo "No search query provided and no text highlighted."
+    exit 1
+fi
+
+echo "Searching for: '$QUERY'"
+
+# 2. The Search & Selector
+# -n: Show line numbers (crucial for jumping to the error)
+# --fixed-strings: Treat input as literal text (fixes the regex crash)
+# --delimiter :: Tells fzf to split input on colons (file:line:content)
+# --preview: Uses bat (or cat) to show the code context with highlighting
+# --bind: Allows you to toggle between previewing the match vs full file (optional fancy feature)
+
+SELECTED=$(rg --line-number --no-heading --color=always --smart-case --fixed-strings "$QUERY" | \
+    fzf --ansi \
+        --delimiter : \
+        --preview 'bat --style=numbers --color=always --highlight-line {2} {1}' \
+        --preview-window 'right:60%:border-left' \
+        --bind 'enter:become(echo {1} {2})')
+
+# 3. The Opener
+# Parses the output "filename linenumber" and opens nvim at that exact line
+if [ -n "$SELECTED" ]; then
+    # Read filename and line number into variables
+    read -r file line <<< "$SELECTED"
+    
+    # Open nvim at the specific line
+    nvim "+$line" "$file"
+fi
