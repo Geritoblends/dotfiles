@@ -1,5 +1,6 @@
 DOTS="$HOME/nix-dots"
 
+alias nvim='nvim --listen /tmp/nvim.$$.0'
 alias snvim="sudo -E nvim -n"
 alias nvimconf="nvim -n ~/.config/nvim/init.lua"
 alias projects="cd ~/projects"

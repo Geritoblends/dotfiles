@@ -136,7 +136,12 @@ tmp() {
 
 tmpf() {
   mkdir -p ~/.tmp
-  find ~/.tmp -type f | fzf --preview 'cat {}' | xargs -r nvim
+  local file
+  file=$(find ~/.tmp -type f | fzf --preview 'cat {}')
+  
+  if [ -n "$file" ]; then
+      nvim "$file"
+  fi
 }
 
 DOTS="$HOME/nix-dots"
@@ -165,16 +170,39 @@ lbin() {
 }
 
 lbinf() {
-
     local bin_dir="$DOTS/bin"
-
     mkdir -p "$bin_dir"
-    find "$bin_dir" -type f | fzf --preview 'cat {}' | xargs -r nvim
-
+    
+    # 1. Capture selection to variable
+    local file
+    file=$(find "$bin_dir" -type f | fzf --preview 'cat {}')
+    
+    # 2. Run nvim from the shell (triggers your alias)
+    if [ -n "$file" ]; then
+        nvim "$file"
+    fi
 }
 
 mvd() {
     local src="$HOME/Downloads"
+    
+    local selected=$(ls -A "$src" | fzf -m --header "Select files to move from Downloads" --preview "ls -lh $src/{}")
+
+    if [ -z "$selected" ]; then
+        return 0
+    fi
+
+    local SAVEIFS=$IFS
+    IFS=$'\n'
+    for file in $selected; do
+        mv -v -i "$src/$file" .
+    done
+
+    IFS=$SAVEIFS
+}
+
+mvt() {
+    local src="$HOME/.tmp"
     
     local selected=$(ls -A "$src" | fzf -m --header "Select files to move from Downloads" --preview "ls -lh $src/{}")
 
@@ -272,12 +300,17 @@ lscript() {
 }
 
 lscriptf() {
-
     local scripts_dir="$DOTS/scripts"
-
     mkdir -p "$scripts_dir"
-    find "$scripts_dir" -type f | fzf --preview 'cat {}' | xargs -r nvim
-
+    
+    # 1. Capture selection to variable
+    local file
+    file=$(find "$scripts_dir" -type f | fzf --preview 'cat {}')
+    
+    # 2. Run nvim from the shell (triggers your alias)
+    if [ -n "$file" ]; then
+        nvim "$file"
+    fi
 }
 
 setup_local_nix() {
@@ -327,4 +360,10 @@ lcd() {
     if [ -n "$target" ]; then
         cd "$target" || return 1
     fi
+}
+
+iphone-copy() {
+    echo "__TERMIUS_COPY_BEGIN__"
+    cat "$@" 2>/dev/null || echo "$@"
+    echo "__TERMIUS_COPY_END__"
 }

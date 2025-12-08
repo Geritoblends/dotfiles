@@ -1,17 +1,10 @@
 #!/bin/bash
 
-# Usage: theme <colorscheme> [layout_name]
-# Example: theme nord minimal
-# Example: theme gruvbox (defaults to 'default' layout)
-
-COLOR_THEME="$1"
-LAYOUT_STYLE="$2"
-
+# Usage: theme -c <colorscheme> -l <layout>
 
 # ---------------------------------------------------------
 # 1. PATH DEFINITIONS
 # ---------------------------------------------------------
-# The Repository (Source of Truth)
 DOTS_DIR="$HOME/nix-dots"
 SCHEME_SOURCE="$DOTS_DIR/config/wal/colorschemes"
 TEMPLATE_SOURCE="$DOTS_DIR/config/wal/templates"
@@ -22,8 +15,13 @@ WAL_CONFIG_DIR="$HOME/.config/wal"
 WAL_TEMPLATE_DIR="$WAL_CONFIG_DIR/templates"
 WAL_SCHEME_DIR="$WAL_CONFIG_DIR/colorschemes"
 CACHE_DIR="$HOME/.cache/wal"
+mkdir -p "$CACHE_DIR"
 
-# Target Config Files (Local System)
+# State Files
+CURRENT_THEME_FILE="$CACHE_DIR/current_theme_name"
+CURRENT_LAYOUT_FILE="$CACHE_DIR/current_layout"
+
+# Target Config Files
 HYPR_CONF="$HOME/.config/hypr/layout-settings.conf"
 WAYBAR_CONF="$HOME/.config/waybar/config.jsonc"
 WAYBAR_STYLE="$HOME/.config/waybar/style.css"
@@ -32,194 +30,153 @@ DUNST_CONF="$HOME/.config/dunst/dunstrc"
 FOOT_CONF="$HOME/.config/foot/foot.ini"
 
 # ---------------------------------------------------------
-# 2. VALIDATION & DEFAULTS
+# 2. ARGUMENT PARSING
 # ---------------------------------------------------------
-if [ -z "$COLOR_THEME" ]; then
+
+TARGET_COLOR=""
+TARGET_LAYOUT=""
+
+show_help() {
+    echo "Usage: theme [-c colorscheme] [-l layout]"
+    echo ""
     echo "🎨 Available Colors:"
     ls "$SCHEME_SOURCE" 2>/dev/null | sed 's/.json//' | tr '\n' ' '
-    echo -e "\n\n📐 Available Layouts:"
-    ls "$LAYOUTS_ROOT" 2>/dev/null | tr '\n' ' '
-    echo ""
     exit 1
+}
+
+while getopts "c:l:h" opt; do
+  case $opt in
+    c) TARGET_COLOR="$OPTARG" ;;
+    l) TARGET_LAYOUT="$OPTARG" ;;
+    h) show_help ;;
+    *) show_help ;;
+  esac
+done
+
+# ---------------------------------------------------------
+# 3. STATE RESOLUTION
+# ---------------------------------------------------------
+
+# A. Resolve Layout (Default to current if missing)
+if [ -z "$TARGET_LAYOUT" ]; then
+    if [ -f "$CURRENT_LAYOUT_FILE" ]; then
+        TARGET_LAYOUT=$(cat "$CURRENT_LAYOUT_FILE")
+    else
+        TARGET_LAYOUT="mono-minimal"
+    fi
+    echo "ℹ️  Keeping current layout: $TARGET_LAYOUT"
 fi
 
-# Default layout to "default" if not specified
-if [ -z "$LAYOUT_STYLE" ]; then
-    LAYOUT_STYLE="mono-minimal"
-fi
-
-LAYOUT_DIR="$LAYOUTS_ROOT/$LAYOUT_STYLE"
+LAYOUT_DIR="$LAYOUTS_ROOT/$TARGET_LAYOUT"
 
 # Validate Inputs
-if [ ! -f "$SCHEME_SOURCE/$COLOR_THEME.json" ]; then
-    echo "❌ Error: Color scheme '$COLOR_THEME' not found."
+if [ -n "$TARGET_COLOR" ] && [ ! -f "$SCHEME_SOURCE/$TARGET_COLOR.json" ]; then
+    echo "❌ Error: Color scheme '$TARGET_COLOR' not found."
     exit 1
 fi
 
 if [ ! -d "$LAYOUT_DIR" ]; then
-    echo "❌ Error: Layout '$LAYOUT_STYLE' not found in $LAYOUTS_ROOT"
+    echo "❌ Error: Layout '$TARGET_LAYOUT' not found."
     exit 1
 fi
 
 # ---------------------------------------------------------
-# 3. PREPARE PYWAL (The Hybrid Approach)
+# 4. PREPARE TEMPLATES (Layout Switch)
 # ---------------------------------------------------------
-echo "⚙️  Preparing Pywal..."
+echo "⚙️  Preparing Pywal templates for $TARGET_LAYOUT..."
+mkdir -p "$WAL_TEMPLATE_DIR" "$WAL_SCHEME_DIR"
 
-# Ensure local directories exist
-mkdir -p "$WAL_TEMPLATE_DIR"
-mkdir -p "$WAL_SCHEME_DIR"
-
-# A. Link Static Schemes (Repo -> Local)
-# We link the folder so new schemes added to repo appear automatically
 if [ ! -L "$WAL_SCHEME_DIR" ]; then
     rm -rf "$WAL_SCHEME_DIR"
     ln -sf "$SCHEME_SOURCE" "$WAL_SCHEME_DIR"
 fi
-
-# B. Link Static Templates (Repo -> Local)
-# We link the contents so we can inject files alongside them
 ln -sf "$TEMPLATE_SOURCE/"* "$WAL_TEMPLATE_DIR/"
 
-# C. Inject Dynamic Layout Template (Layout -> Local)
-# We COPY the dunstrc because it changes based on the layout choice.
-# This prevents git dirty states and allows 'wal' to merge it.
+# Inject Layout-specific Dunst config
 if [ -f "$LAYOUT_DIR/dunstrc" ]; then
     cp "$LAYOUT_DIR/dunstrc" "$WAL_TEMPLATE_DIR/dunstrc"
 else
-    echo "⚠️  Warning: No dunstrc found in layout '$LAYOUT_STYLE'"
+    echo "⚠️  Warning: No dunstrc found in layout."
 fi
 
 # ---------------------------------------------------------
-# 4. GENERATE COLORS
+# 5. GENERATE COLORS (The Critical Fix)
 # ---------------------------------------------------------
-echo "🎨 Applying Colors ($COLOR_THEME)..."
 
-# This generates ~/.cache/wal/colors-hyprland.conf, ~/.cache/wal/dunstrc, etc.
-wal -f "$SCHEME_SOURCE/$COLOR_THEME.json" > /dev/null
+if [ -n "$TARGET_COLOR" ]; then
+    # CASE A: User explicitly requested a new color theme.
+    # We overwrite everything (Music Mood / Old Theme).
+    echo "🎨 Applying New Colors: $TARGET_COLOR"
+    wal -f "$SCHEME_SOURCE/$TARGET_COLOR.json" > /dev/null
+    
+    # Save this as the new "Default" for when music stops
+    echo "$TARGET_COLOR" > "$CURRENT_THEME_FILE"
+    
+    # Handle Wallpaper Update
+    WALL_DIR="$HOME/Pictures/Wallpapers/$TARGET_COLOR"
+    mkdir -p "$WALL_DIR"
+    echo "WALLPAPER_DIR=\"$WALL_DIR\"" > "$CACHE_DIR/wallpaper_env.sh"
 
-# Save current theme name for other scripts
-echo "$COLOR_THEME" > "$CACHE_DIR/current_theme_name"
+    TARGET_WALL=$(find "$WALL_DIR" -maxdepth 1 -type f -name "main.*" | head -n 1)
+    [ -z "$TARGET_WALL" ] && TARGET_WALL=$(find "$WALL_DIR" -maxdepth 1 -type f | head -n 1)
+
+    if [ -n "$TARGET_WALL" ]; then
+        echo "🖼️  Setting wallpaper: $(basename "$TARGET_WALL")"
+        if command -v swww &> /dev/null; then
+            swww img "$TARGET_WALL" --transition-type none
+        fi
+        # Update Persistence
+        HYPAPER_CONFIG="$HOME/.config/hypr/hyprpaper.conf"
+        HYPRLOCK_CONFIG="$HOME/.config/hypr/hyprlock.conf"
+        [ -f "$HYPAPER_CONFIG" ] && sed -i "s|^preload = .*|preload = $TARGET_WALL|" "$HYPAPER_CONFIG"
+        [ -f "$HYPAPER_CONFIG" ] && sed -i "s|^wallpaper = .*|wallpaper = ,$TARGET_WALL|" "$HYPAPER_CONFIG"
+        [ -f "$HYPRLOCK_CONFIG" ] && sed -i "s|^\$wallpaper = .*|\$wallpaper = $TARGET_WALL|" "$HYPRLOCK_CONFIG"
+    fi
+
+else
+    # CASE B: Layout Change Only.
+    # We MUST NOT change the colors. We just need to re-generate the templates
+    # (like dunstrc) using whatever colors are CURRENTLY active (Music or Theme).
+    echo "🎨 Preserving current colors (wal -R)..."
+    wal -R -n -t -q
+fi
+
+# Save Layout State
+echo "$TARGET_LAYOUT" > "$CURRENT_LAYOUT_FILE"
 
 # ---------------------------------------------------------
-# 5. UPDATE ACTIVE APPLICATIONS
+# 6. RELOAD & LINK
 # ---------------------------------------------------------
 
 echo "🦊 Updating Firefox..."
-pywalfox update
+if command -v pywalfox &> /dev/null; then pywalfox update; fi
 
-echo "📝 Updating all active Neovim sessions..."
-
+echo "📝 Updating Neovim..."
 if command -v nvr &> /dev/null; then
-    NVIM_CMD=":colorscheme wal<CR>"
-
-    # Loop through all found sockets and update them one by one
     for socket in /tmp/nvim.*.0; do
-        # Check if the socket actually exists (avoids errors if no nvim is running)
-        if [ -S "$socket" ]; then
-            nvr --servername "$socket" --remote-send "$NVIM_CMD" &
-        fi
+        [ -S "$socket" ] && nvr --servername "$socket" --remote-send ":colorscheme wal<CR>" &
     done
-else
-    echo "Warning: nvim-remote (nvr) not found."
 fi
 
-# ---------------------------------------------------------
-# 6. LINK LAYOUT FILES (System -> Repo)
-# ---------------------------------------------------------
-echo "📐 Linking Layout ($LAYOUT_STYLE)..."
-
-# Helper function
+echo "📐 Linking Layout Files..."
 link_file() {
-    src="$1"
-    dest="$2"
-    mkdir -p "$(dirname "$dest")" # Ensure parent dir exists
-    
-    if [ -f "$src" ]; then
-        ln -sf "$src" "$dest"
-    else
-        echo "⚠️  Missing layout file: $src"
-    fi
+    src="$1"; dest="$2"
+    mkdir -p "$(dirname "$dest")"
+    [ -f "$src" ] && ln -sf "$src" "$dest"
 }
 
-# Hyprland (Partial Config)
 link_file "$LAYOUT_DIR/hypr-layout.conf" "$HYPR_CONF"
-
-# Waybar (Config + Style)
 link_file "$LAYOUT_DIR/waybar/config.jsonc" "$WAYBAR_CONF"
 link_file "$LAYOUT_DIR/waybar/style.css" "$WAYBAR_STYLE"
-
-# Fuzzel (Config)
 link_file "$LAYOUT_DIR/fuzzel.ini" "$FUZZEL_CONF"
-
-# Foot (Config)
 link_file "$LAYOUT_DIR/foot.ini" "$FOOT_CONF"
-# Dunst (Special Case: Link to Cache)
-# We don't link to the layout folder. We link to the generated cache file.
 mkdir -p "$(dirname "$DUNST_CONF")"
 ln -sf "$CACHE_DIR/dunstrc" "$DUNST_CONF"
 
-# ---------------------------------------------------------
-# 7. WALLPAPER HANDLING (Prioritize 'main.*', then fallback)
-# ---------------------------------------------------------
-
-WALL_DIR="$HOME/Pictures/Wallpapers/$COLOR_THEME"
-if [ ! -d "$WALL_DIR" ]; then
-    mkdir -p "$WALL_DIR"
-fi
-echo "WALLPAPER_DIR=\"$WALL_DIR\"" > "$CACHE_DIR/wallpaper_env.sh"
-
-# 1. Priority: Look for a wallpaper named 'main' (e.g., main.jpg, main.png)
-TARGET_WALL=$(find "$WALL_DIR" -maxdepth 1 -type f -name "main.*" \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" -o -iname "*.gif" \) | head -n 1)
-
-# 2. Fallback: If no 'main.*' found, grab the first available image
-if [ -z "$TARGET_WALL" ]; then
-    TARGET_WALL=$(find "$WALL_DIR" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" -o -iname "*.gif" \) | head -n 1)
-fi
-
-# Apply the wallpaper if found
-if [ -n "$TARGET_WALL" ]; then
-    echo "🖼️  Setting wallpaper: $(basename "$TARGET_WALL")"
-    
-    # A. Update swww (live)
-    swww img "$TARGET_WALL" --transition-type none
-
-    # B. Update configs for persistence (Hyprpaper & Hyprlock)
-    HYPAPER_CONFIG="$HOME/.config/hypr/hyprpaper.conf"
-    HYPRLOCK_CONFIG="$HOME/.config/hypr/hyprlock.conf"
-
-    if [ -f "$HYPAPER_CONFIG" ]; then
-        sed -i "s|^preload = .*|preload = $TARGET_WALL|" "$HYPAPER_CONFIG"
-        sed -i "s|^wallpaper = .*|wallpaper = ,$TARGET_WALL|" "$HYPAPER_CONFIG"
-    fi
-
-    if [ -f "$HYPRLOCK_CONFIG" ]; then
-        sed -i "s|^\$wallpaper = .*|\$wallpaper = $TARGET_WALL|" "$HYPRLOCK_CONFIG"
-    fi
-else
-    echo "⚠️  No wallpapers found in $WALL_DIR"
-fi
-
-# ---------------------------------------------------------
-# 8. RELOAD APPLICATIONS
-# ---------------------------------------------------------
 echo "🔄 Reloading apps..."
-
-# Hyprland
 hyprctl reload > /dev/null
+pkill waybar; waybar & disown
+killall nautilus 2>/dev/null
+pkill dunst; sleep 0.2; dunst & disown
 
-# Waybar
-pkill waybar
-waybar & disown
-
-# Nautilus
-killall nautilus
-
-# Dunst (Needs a moment to die completely)
-pkill dunst
-sleep 0.2
-dunst & disown
-
-# Fuzzel (Reads config on launch, no reload needed)
-
-echo "✅ System transitioned to [$COLOR_THEME] :: [$LAYOUT_STYLE]"
+echo "✅ Done."

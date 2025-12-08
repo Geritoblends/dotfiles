@@ -342,3 +342,402 @@ Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fu
 2025-12-05T21:12:20 player: played "1979 - Mareux - Decade.mp3"
 2025-12-05T21:15:02 player: played "Sail - Mareux - Decade.mp3"
 2025-12-05T21:19:46 player: played "Cold Summer - Mareux - Decade.mp3"
+2025-12-07T22:35:44 player: played "A New Kind Of Love - Frou Frou - asterik.mp3"
+2025-12-07T23:26:33 update: updating /Blackmail - Mareux - Nonstop Romance.mp3
+2025-12-07T23:26:38 update: updating /Radio Club - Mareux - Nonstop Romance.mp3
+2025-12-07T23:26:44 update: updating /Nonstop Romance - Mareux - Nonstop Romance.mp3
+2025-12-07T23:26:57 update: added /Wild At Heart - Mareux - Nonstop Romance.mp3
+2025-12-07T23:27:03 update: updating /Ébène Fumé - Mareux ft. Riki - Nonstop Romance.mp3
+2025-12-07T23:27:10 update: updating /Prodigy - Mareux - Nonstop Romance.mp3
+2025-12-07T23:27:16 update: updating /Blue - Mareux - Nonstop Romance.mp3
+2025-12-07T23:27:23 update: updating /Laugh Now Cry Later - Mareux - Nonstop Romance.mp3
+2025-12-07T23:27:29 update: updating /Snake Eyes - Mareux - Nonstop Romance.mp3
+2025-12-07T23:31:23 update: removing Radio Club - Mareux - Nonstop Romance.mp3
+2025-12-07T23:33:16 player: played "Wild At Heart - Mareux - Nonstop Romance.mp3"
+2025-12-07T23:35:00 update: removing Wild at Heart - Mareux - Nonstop Romance.mp3
+2025-12-07T23:35:00 update: removing Snake Eyes - Mareux - Nonstop Romance.mp3
+2025-12-07T23:35:00 update: removing Prodigy - Mareux - Nonstop Romance.mp3
+2025-12-07T23:35:00 update: removing Nonstop Romance - Mareux - Nonstop Romance.mp3
+2025-12-07T23:35:00 update: removing Laugh Now Cry Later - Mareux - Nonstop Romance.mp3
+2025-12-07T23:35:00 update: removing Ébène Fumé - Mareux ft. Riki - Nonstop Romance.mp3
+2025-12-07T23:35:00 update: removing Blue - Mareux - Nonstop Romance.mp3
+2025-12-07T23:35:00 update: removing Blackmail - Mareux - Nonstop Romance.mp3
+2025-12-07T23:35:00 update: removing Wild At Heart - Mareux - Nonstop Romance.mp3
+2025-12-07T23:35:16 player: played "Ébène Fumé - Mareux ft. Riki - Nonstop Romance.mp3"
+2025-12-07T23:35:27 playlist: Failed to load "Blackmail - Mareux - Nonstop Romance.mp3".
+2025-12-07T23:35:27 playlist: Failed to load "Radio Club - Mareux - Nonstop Romance.mp3".
+2025-12-07T23:35:27 playlist: Failed to load "Nonstop Romance - Mareux - Nonstop Romance.mp3".
+2025-12-07T23:35:27 playlist: Failed to load "Wild At Heart - Mareux - Nonstop Romance.mp3".
+2025-12-07T23:35:27 playlist: Failed to load "Ébène Fumé - Mareux ft. Riki - Nonstop Romance.mp3".
+2025-12-07T23:35:27 playlist: Failed to load "Prodigy - Mareux - Nonstop Romance.mp3".
+2025-12-07T23:35:27 playlist: Failed to load "Blue - Mareux - Nonstop Romance.mp3".
+2025-12-07T23:35:27 playlist: Further errors for this playlist will not be logged.
+2025-12-07T23:35:27 exception: Bad song index
+2025-12-07T23:36:58 update: added /Blackmail - Mareux - Nonstop Romance.mp3
+2025-12-07T23:37:13 update: added /Radio Club - Mareux - Nonstop Romance.mp3
+2025-12-07T23:37:27 update: added /Nonstop Romance - Mareux - Nonstop Romance.mp3
+2025-12-07T23:37:41 update: added /Wild At Heart - Mareux - Nonstop Romance.mp3
+2025-12-07T23:37:59 update: added /Ébène Fumé - Mareux ft. Riki - Nonstop Romance.mp3
+2025-12-07T23:38:13 update: added /Prodigy - Mareux - Nonstop Romance.mp3
+2025-12-07T23:38:29 update: added /Blue - Mareux - Nonstop Romance.mp3
+2025-12-07T23:38:45 update: added /Laugh Now Cry Later - Mareux - Nonstop Romance.mp3
+2025-12-07T23:39:06 update: added /Snake Eyes - Mareux - Nonstop Romance.mp3
+2025-12-07T23:39:52 player: played "Blackmail - Mareux - Nonstop Romance.mp3"
+2025-12-07T23:44:23 player: played "Radio Club - Mareux - Nonstop Romance.mp3"
+2025-12-07T23:47:12 player: played "Nonstop Romance - Mareux - Nonstop Romance.mp3"
+2025-12-07T23:50:59 player: played "Prodigy - Mareux - Nonstop Romance.mp3"
+2025-12-07T23:53:37 player: played "Blue - Mareux - Nonstop Romance.mp3"
+2025-12-07T23:56:57 player: played "Laugh Now Cry Later - Mareux - Nonstop Romance.mp3"
+2025-12-07T23:59:39 player: played "Snake Eyes - Mareux - Nonstop Romance.mp3"
+2025-12-08T00:02:26 player: played "Blackmail - Mareux - Nonstop Romance.mp3"
+2025-12-08T00:05:29 player: played "Radio Club - Mareux - Nonstop Romance.mp3"
+2025-12-08T00:08:19 player: played "Nonstop Romance - Mareux - Nonstop Romance.mp3"
+2025-12-08T00:10:49 player: played "Wild At Heart - Mareux - Nonstop Romance.mp3"
+2025-12-08T00:12:15 update: added /Midnight City - M83 - Hurry Up, We're Dreaming.mp3
+2025-12-08T00:16:56 player: played "Midnight City - M83 - Hurry Up, We're Dreaming.mp3"
+2025-12-08T00:19:40 update: added /Infinite Love Without Fulfillment - Grimes - Visions.mp3
+2025-12-08T00:19:56 update: added /Genesis - Grimes - Visions.mp3
+2025-12-08T00:20:11 update: added /Oblivion - Grimes - Visions.mp3
+2025-12-08T00:20:24 update: added /Eight - Grimes - Visions.mp3
+2025-12-08T00:20:40 update: added /Circumambient - Grimes - Visions.mp3
+2025-12-08T00:20:57 update: added /Vowels = Space and Time - Grimes - Visions.mp3
+2025-12-08T00:21:12 update: added /Visiting Statue - Grimes - Visions.mp3
+2025-12-08T00:21:24 player: played "Infinite Love Without Fulfillment - Grimes - Visions.mp3"
+2025-12-08T00:21:27 update: added /Be a Body - Grimes - Visions.mp3
+2025-12-08T00:21:44 update: added /Colour of Moonlight (Antiochus) - Grimes - Visions.mp3
+2025-12-08T00:22:03 update: added /Symphonia IX (My Wait Is U) - Grimes - Visions.mp3
+2025-12-08T00:22:20 update: added /Nightmusic - Grimes ft. Majical Cloudz - Visions.mp3
+2025-12-08T00:22:28 exception: No such directory
+2025-12-08T00:22:30 exception: No such directory
+2025-12-08T00:26:13 player: played "Infinite Love Without Fulfillment - Grimes - Visions.mp3"
+2025-12-08T00:30:31 player: played "Genesis - Grimes - Visions.mp3"
+2025-12-08T00:34:22 update: updating /Infinite Love Without Fulfillment - Grimes - Visions.mp3
+2025-12-08T00:34:31 update: updating /Genesis - Grimes - Visions.mp3
+2025-12-08T00:34:39 update: updating /Oblivion - Grimes - Visions.mp3
+2025-12-08T00:34:46 update: updating /Eight - Grimes - Visions.mp3
+2025-12-08T00:35:13 update: added /The End - Magdalena Bay - Mercurial World.mp3
+2025-12-08T00:36:28 update: added /Mercurial World - Magdalena Bay - Mercurial World.mp3
+2025-12-08T00:36:31 player: played "The End - Magdalena Bay - Mercurial World.mp3"
+2025-12-08T00:36:45 update: added /Dawning of the Season - Magdalena Bay - Mercurial World.mp3
+2025-12-08T00:37:03 update: added /Secrets (Your Fire) - Magdalena Bay - Mercurial World.mp3
+2025-12-08T00:37:20 update: added /You Lose! - Magdalena Bay - Mercurial World.mp3
+2025-12-08T00:37:38 update: added /Something for 2 - Magdalena Bay - Mercurial World.mp3
+2025-12-08T00:37:58 update: added /Chaeri - Magdalena Bay - Mercurial World.mp3
+2025-12-08T00:38:16 update: added /Hysterical Us - Magdalena Bay - Mercurial World.mp3
+2025-12-08T00:38:32 update: added /Prophecy - Magdalena Bay - Mercurial World.mp3
+2025-12-08T00:38:49 update: added /Domino - Magdalena Bay - Mercurial World.mp3
+2025-12-08T00:39:08 update: added /Dreamcatching - Magdalena Bay - Mercurial World.mp3
+2025-12-08T00:39:25 update: added /The Beginning - Magdalena Bay - Mercurial World.mp3
+2025-12-08T00:41:01 player: played "The End - Magdalena Bay - Mercurial World.mp3"
+2025-12-08T00:45:30 player: played "The End - Magdalena Bay - Mercurial World.mp3"
+2025-12-08T00:46:11 player: played "The End - Magdalena Bay - Mercurial World.mp3"
+2025-12-08T00:46:18 player: played "Infinite Love Without Fulfillment - Grimes - Visions.mp3"
+2025-12-08T00:46:23 player: played "The End - Magdalena Bay - Mercurial World.mp3"
+2025-12-08T00:48:33 player: played "Infinite Love Without Fulfillment - Grimes - Visions.mp3"
+2025-12-08T00:51:02 player: played "The End - Magdalena Bay - Mercurial World.mp3"
+2025-12-08T00:54:28 player: played "The End - Magdalena Bay - Mercurial World.mp3"
+2025-12-08T01:02:03 player: played "Infinite Love Without Fulfillment - Grimes - Visions.mp3"
+2025-12-08T01:03:25 update: updating /1979 - Mareux - Decade.mp3
+2025-12-08T01:03:26 update: updating /Blackmail - Mareux - Nonstop Romance.mp3
+2025-12-08T01:03:34 update: updating /Come Back To Me - Mareux - Decade.mp3
+2025-12-08T01:03:34 update: added /SKINNY - Billie Eilish - Hit Me Hard and Soft.webm
+2025-12-08T01:03:35 mpg123: mpg123_getformat() failed: Message: I am done with this track.
+2025-12-08T01:03:35 mpg123: mpg123_getformat() failed: Message: I am done with this track.
+2025-12-08T01:03:36 ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+2025-12-08T01:03:36 ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+2025-12-08T01:03:36 update: updating /Radio Club - Mareux - Nonstop Romance.mp3
+2025-12-08T01:03:47 update: added /Getting Older - Billie Eilish - Happier Than Ever.webm
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:03:47 update: added /Getting Older - Billie Eilish - Happier Than Ever.mp3
+2025-12-08T01:03:47 update: added /SKINNY - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T01:03:47 update: removing SKINNY - Billie Eilish - Hit Me Hard and Soft.webm
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:03:51 update: added /insectinsectinsect! - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+2025-12-08T01:03:51 update: updating /Getting Older - Billie Eilish - Happier Than Ever.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:03:51 update: updating /Nonstop Romance - Mareux - Nonstop Romance.mp3
+2025-12-08T01:03:51 update: added /insectinsectinsect! - Billie Eilish - When We All Fall Asleep, Where Do We Go?.webm
+2025-12-08T01:03:51 update: updating /insectinsectinsect! - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:03:51 update: updating /Sail - Mareux - Decade.mp3
+2025-12-08T01:03:57 update: updating /insectinsectinsect! - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:03:57 update: updating /Getting Older - Billie Eilish - Happier Than Ever.mp3
+2025-12-08T01:03:57 update: removing Getting Older - Billie Eilish - Happier Than Ever.webm
+2025-12-08T01:04:01 update: updating /insectinsectinsect! - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+2025-12-08T01:04:01 update: added /COPYCAT - Billie Eilish - Don't Smile at Me.webm
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:04:01 update: added /COPYCAT - Billie Eilish - Don't Smile at Me.mp3
+2025-12-08T01:04:01 update: removing insectinsectinsect! - Billie Eilish - When We All Fall Asleep, Where Do We Go?.webm
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:04:04 update: added /LUNCH - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T01:04:05 update: added /LUNCH - Billie Eilish - Hit Me Hard and Soft.webm
+2025-12-08T01:04:05 update: updating /COPYCAT - Billie Eilish - Don't Smile at Me.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:04:06 update: updating /Wild At Heart - Mareux - Nonstop Romance.mp3
+2025-12-08T01:04:06 update: updating /LUNCH - Billie Eilish - Hit Me Hard and Soft.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:04:06 update: updating /COPYCAT - Billie Eilish - Don't Smile at Me.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:04:09 update: updating /LUNCH - Billie Eilish - Hit Me Hard and Soft.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:04:09 update: updating /COPYCAT - Billie Eilish - Don't Smile at Me.mp3
+2025-12-08T01:04:09 update: updating /Cold Summer - Mareux - Decade.mp3
+2025-12-08T01:04:09 update: removing COPYCAT - Billie Eilish - Don't Smile at Me.webm
+2025-12-08T01:04:10 player: played "Infinite Love Without Fulfillment - Grimes - Visions.mp3"
+2025-12-08T01:04:16 update: updating /LUNCH - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T01:04:16 update: added /I Didn't Change My Number - Billie Eilish - Happier Than Ever.webm
+2025-12-08T01:04:16 update: updating /COPYCAT - Billie Eilish - Don't Smile at Me.mp3
+2025-12-08T01:04:16 update: removing LUNCH - Billie Eilish - Hit Me Hard and Soft.webm
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:04:19 update: added /I Didn't Change My Number - Billie Eilish - Happier Than Ever.mp3
+2025-12-08T01:04:19 update: added /bad guy - Billie Eilish - When We All Fall Asleep, Where Do We Go?.webm
+2025-12-08T01:04:19 update: updating /Ébène Fumé - Mareux ft. Riki - Nonstop Romance.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:04:19 update: added /bad guy - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+2025-12-08T01:04:31 update: updating /I Didn't Change My Number - Billie Eilish - Happier Than Ever.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:04:31 update: added /CHIHIRO - Billie Eilish - Hit Me Hard and Soft.webm
+2025-12-08T01:04:31 update: added /idontwannabeyouanymore - Billie Eilish - Don't Smile at Me.mp3
+2025-12-08T01:04:31 mpg123: mpg123_getformat() failed: Message: I am done with this track.
+2025-12-08T01:04:31 mpg123: mpg123_getformat() failed: Message: I am done with this track.
+2025-12-08T01:04:31 ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+2025-12-08T01:04:31 ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+2025-12-08T01:04:31 update: updating /bad guy - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+2025-12-08T01:04:31 update: removing bad guy - Billie Eilish - When We All Fall Asleep, Where Do We Go?.webm
+2025-12-08T01:04:35 update: updating /I Didn't Change My Number - Billie Eilish - Happier Than Ever.mp3
+2025-12-08T01:04:35 update: updating /idontwannabeyouanymore - Billie Eilish - Don't Smile at Me.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:04:35 update: added /CHIHIRO - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T01:04:35 update: removing I Didn't Change My Number - Billie Eilish - Happier Than Ever.webm
+2025-12-08T01:04:37 update: updating /CHIHIRO - Billie Eilish - Hit Me Hard and Soft.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:04:37 update: updating /Prodigy - Mareux - Nonstop Romance.mp3
+2025-12-08T01:04:46 update: updating /Blue - Mareux - Nonstop Romance.mp3
+2025-12-08T01:04:46 update: updating /CHIHIRO - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T01:04:46 update: removing CHIHIRO - Billie Eilish - Hit Me Hard and Soft.webm
+2025-12-08T01:04:46 update: updating /CHIHIRO - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T01:05:00 update: added /my boy - Billie Eilish - Don't Smile at Me.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:05:00 update: added /Billie Bossa Nova - Billie Eilish - Happier Than Ever.mp3
+2025-12-08T01:05:00 update: added /Billie Bossa Nova - Billie Eilish - Happier Than Ever.webm
+2025-12-08T01:05:00 update: added /xanny - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+2025-12-08T01:05:00 update: added /BIRDS OF A FEATHER - Billie Eilish - Hit Me Hard and Soft.webm
+2025-12-08T01:05:01 update: updating /Billie Bossa Nova - Billie Eilish - Happier Than Ever.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:05:01 mpg123: mpg123_getformat() failed: Message: I am done with this track.
+2025-12-08T01:05:01 mpg123: mpg123_getformat() failed: Message: I am done with this track.
+2025-12-08T01:05:01 ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+2025-12-08T01:05:01 ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+2025-12-08T01:05:01 update: updating /Laugh Now Cry Later - Mareux - Nonstop Romance.mp3
+2025-12-08T01:05:08 update: updating /Billie Bossa Nova - Billie Eilish - Happier Than Ever.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:05:08 update: added /BIRDS OF A FEATHER - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T01:05:08 update: removing Billie Bossa Nova - Billie Eilish - Happier Than Ever.webm
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:05:20 update: added /watch - Billie Eilish - Don't Smile at Me.mp3
+2025-12-08T01:05:20 update: added /watch - Billie Eilish - Don't Smile at Me.webm
+2025-12-08T01:05:21 update: updating /Snake Eyes - Mareux - Nonstop Romance.mp3
+2025-12-08T01:05:21 update: added /you should see me in a crown - Billie Eilish - When We All Fall Asleep, Where Do We Go?.webm
+2025-12-08T01:05:21 mpg123: mpg123_getformat() failed: Message: I am done with this track.
+2025-12-08T01:05:21 mpg123: mpg123_getformat() failed: Message: I am done with this track.
+2025-12-08T01:05:21 ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+2025-12-08T01:05:21 ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+2025-12-08T01:05:21 update: updating /BIRDS OF A FEATHER - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T01:05:21 update: removing BIRDS OF A FEATHER - Billie Eilish - Hit Me Hard and Soft.webm
+2025-12-08T01:05:22 update: updating /watch - Billie Eilish - Don't Smile at Me.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:05:22 update: added /you should see me in a crown - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+2025-12-08T01:05:22 update: updating /BIRDS OF A FEATHER - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T01:05:29 update: added /my future - Billie Eilish - Happier Than Ever.webm
+2025-12-08T01:05:29 update: updating /watch - Billie Eilish - Don't Smile at Me.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:05:29 update: added /my future - Billie Eilish - Happier Than Ever.mp3
+2025-12-08T01:05:29 update: updating /you should see me in a crown - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+2025-12-08T01:05:29 update: removing watch - Billie Eilish - Don't Smile at Me.webm
+2025-12-08T01:05:29 update: removing you should see me in a crown - Billie Eilish - When We All Fall Asleep, Where Do We Go?.webm
+2025-12-08T01:05:41 update: updating /my future - Billie Eilish - Happier Than Ever.mp3
+2025-12-08T01:05:41 update: removing my future - Billie Eilish - Happier Than Ever.webm
+2025-12-08T01:05:58 update: added /party favor - Billie Eilish - Don't Smile at Me.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:05:58 update: added /Oxytocin - Billie Eilish - Happier Than Ever.mp3
+2025-12-08T01:05:58 update: added /all the good girls go to hell - Billie Eilish - When We All Fall Asleep, Where Do We Go?.webm
+2025-12-08T01:05:58 update: added /Oxytocin - Billie Eilish - Happier Than Ever.webm
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:05:58 update: added /all the good girls go to hell - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+2025-12-08T01:05:58 update: added /WILDFLOWER - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T01:06:04 update: updating /Oxytocin - Billie Eilish - Happier Than Ever.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:06:04 update: updating /all the good girls go to hell - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+2025-12-08T01:06:04 update: removing all the good girls go to hell - Billie Eilish - When We All Fall Asleep, Where Do We Go?.webm
+2025-12-08T01:06:11 update: updating /Oxytocin - Billie Eilish - Happier Than Ever.mp3
+2025-12-08T01:06:11 update: removing Oxytocin - Billie Eilish - Happier Than Ever.webm
+2025-12-08T01:06:22 player: played "Infinite Love Without Fulfillment - Grimes - Visions.mp3"
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:06:28 update: added /wish you were gay - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:06:28 update: added /bellyache - Billie Eilish - Don't Smile at Me.mp3
+2025-12-08T01:06:28 update: added /THE GREATEST - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T01:06:28 update: added /bellyache - Billie Eilish - Don't Smile at Me.webm
+2025-12-08T01:06:28 update: added /wish you were gay - Billie Eilish - When We All Fall Asleep, Where Do We Go?.webm
+2025-12-08T01:06:30 update: updating /wish you were gay - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+2025-12-08T01:06:30 update: updating /bellyache - Billie Eilish - Don't Smile at Me.mp3
+2025-12-08T01:06:30 update: removing bellyache - Billie Eilish - Don't Smile at Me.webm
+2025-12-08T01:06:30 update: removing wish you were gay - Billie Eilish - When We All Fall Asleep, Where Do We Go?.webm
+2025-12-08T01:06:30 exception: No such directory
+2025-12-08T01:06:32 update: updating /wish you were gay - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+2025-12-08T01:06:32 update: updating /bellyache - Billie Eilish - Don't Smile at Me.mp3
+2025-12-08T01:06:56 update: added /L'AMOUR DE MA VIE - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T01:06:56 update: added /when the party's over - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:06:56 update: added /Lost Cause - Billie Eilish - Happier Than Ever.mp3
+2025-12-08T01:06:56 update: added /ocean eyes - Billie Eilish - Don't Smile at Me.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:06:56 update: added /ocean eyes - Billie Eilish - Don't Smile at Me.temp.mp3
+2025-12-08T01:06:56 update: added /Lost Cause - Billie Eilish - Happier Than Ever.webm
+2025-12-08T01:06:56 update: updating /when the party's over - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+2025-12-08T01:06:56 update: removing ocean eyes - Billie Eilish - Don't Smile at Me.temp.mp3
+2025-12-08T01:07:00 update: updating /Lost Cause - Billie Eilish - Happier Than Ever.mp3
+2025-12-08T01:07:00 update: updating /ocean eyes - Billie Eilish - Don't Smile at Me.mp3
+2025-12-08T01:07:00 update: removing Lost Cause - Billie Eilish - Happier Than Ever.webm
+2025-12-08T01:07:14 update: added /8 - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+2025-12-08T01:07:14 update: added /THE DINER - Billie Eilish - Hit Me Hard and Soft.webm
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:07:14 update: added /THE DINER - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T01:07:18 update: added /hostage - Billie Eilish - Don't Smile at Me.webm
+2025-12-08T01:07:18 update: added /Halley's Comet - Billie Eilish - Happier Than Ever.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:07:18 update: added /hostage - Billie Eilish - Don't Smile at Me.mp3
+2025-12-08T01:07:18 update: updating /THE DINER - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T01:07:18 update: removing THE DINER - Billie Eilish - Hit Me Hard and Soft.webm
+2025-12-08T01:07:39 update: added /my strange addiction - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:07:39 update: added /BITTERSUITE - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T01:07:39 update: updating /hostage - Billie Eilish - Don't Smile at Me.mp3
+2025-12-08T01:07:39 update: added /BITTERSUITE - Billie Eilish - Hit Me Hard and Soft.webm
+2025-12-08T01:07:39 update: removing hostage - Billie Eilish - Don't Smile at Me.webm
+2025-12-08T01:07:45 update: added /&burn - Billie Eilish ft. Vince Staples - Don't Smile at Me.webm
+2025-12-08T01:07:45 update: updating /BITTERSUITE - Billie Eilish - Hit Me Hard and Soft.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:07:45 update: added /&burn - Billie Eilish ft. Vince Staples - Don't Smile at Me.mp3
+2025-12-08T01:07:45 update: removing BITTERSUITE - Billie Eilish - Hit Me Hard and Soft.webm
+2025-12-08T01:07:58 update: added /bury a friend - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+2025-12-08T01:07:58 update: added /BLUE - Billie Eilish - Hit Me Hard and Soft.webm
+2025-12-08T01:07:58 update: updating /&burn - Billie Eilish ft. Vince Staples - Don't Smile at Me.mp3
+2025-12-08T01:07:58 update: removing &burn - Billie Eilish ft. Vince Staples - Don't Smile at Me.webm
+2025-12-08T01:08:10 update: added /ilomilo - Billie Eilish - When We All Fall Asleep, Where Do We Go?.webm
+2025-12-08T01:08:10 update: added /BLUE - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T01:08:10 update: removing BLUE - Billie Eilish - Hit Me Hard and Soft.webm
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:08:14 update: added /ilomilo - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+2025-12-08T01:08:15 update: updating /ilomilo - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+2025-12-08T01:08:15 update: removing ilomilo - Billie Eilish - When We All Fall Asleep, Where Do We Go?.webm
+2025-12-08T01:08:33 update: added /listen before i go - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+2025-12-08T01:08:49 update: added /i love you - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+2025-12-08T01:09:03 update: added /goodbye - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+2025-12-08T01:12:21 update: updating /Halley's Comet - Billie Eilish - Happier Than Ever.mp3
+2025-12-08T01:12:23 exception: No such directory
+2025-12-08T01:15:56 player: played "Sail - Mareux - Decade.mp3"
+2025-12-08T01:26:51 player: played "Infinite Love Without Fulfillment - Grimes - Visions.mp3"
+2025-12-08T01:29:01 player: played "Infinite Love Without Fulfillment - Grimes - Visions.mp3"
+2025-12-08T01:31:10 player: played "The End - Magdalena Bay - Mercurial World.mp3"
+2025-12-08T01:34:39 player: played "1979 - Mareux - Decade.mp3"
+2025-12-08T01:35:42 player: played "The End - Magdalena Bay - Mercurial World.mp3"
+2025-12-08T01:38:22 player: played "Infinite Love Without Fulfillment - Grimes - Visions.mp3"
+2025-12-08T01:38:32 player: played "Genesis - Grimes - Visions.mp3"
+2025-12-08T01:41:24 player: played "Blackmail - Mareux - Nonstop Romance.mp3"
+2025-12-08T01:43:54 update: added /Let It Happen - Tame Impala - Currents.mp3
+2025-12-08T01:44:13 update: added /Nangs - Tame Impala - Currents.mp3
+2025-12-08T01:44:41 update: added /The Moment - Tame Impala - Currents.mp3
+2025-12-08T01:45:09 update: added /Yes I'm Changing - Tame Impala - Currents.mp3
+2025-12-08T01:45:38 update: added /Eventually - Tame Impala - Currents.mp3
+2025-12-08T01:46:05 update: added /The Less I Know The Better - Tame Impala - Currents.mp3
+2025-12-08T01:46:35 update: added /Past Life - Tame Impala - Currents.mp3
+2025-12-08T01:46:55 update: added /Disciples - Tame Impala - Currents.mp3
+2025-12-08T01:47:22 update: added /Cause I'm A Man - Tame Impala - Currents.mp3
+2025-12-08T01:47:57 update: added /New Person, Same Old Mistakes - Tame Impala - Currents.mp3
+2025-12-08T01:48:42 player: played "Let It Happen - Tame Impala - Currents.mp3"
+2025-12-08T01:54:38 player: played "SKINNY - Billie Eilish - Hit Me Hard and Soft.mp3"
+2025-12-08T01:57:21 player: played "SKINNY - Billie Eilish - Hit Me Hard and Soft.mp3"
+2025-12-08T01:59:00 update: added /IGOR'S THEME - Tyler, The Creator - IGOR.webm
+2025-12-08T01:59:00 update: added /IGOR'S THEME - Tyler, The Creator - IGOR.mp3
+2025-12-08T01:59:07 player: played "Infinite Love Without Fulfillment - Grimes - Visions.mp3"
+2025-12-08T01:59:22 update: added /EARFQUAKE - Tyler, The Creator - IGOR.mp3
+2025-12-08T01:59:35 update: added /I THINK - Tyler, The Creator - IGOR.webm
+2025-12-08T01:59:35 mpg123: mpg123_getformat() failed: Message: I am done with this track.
+2025-12-08T01:59:35 mpg123: mpg123_getformat() failed: Message: I am done with this track.
+2025-12-08T01:59:35 ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+2025-12-08T01:59:35 ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:59:36 update: added /I THINK - Tyler, The Creator - IGOR.mp3
+2025-12-08T01:59:36 update: updating /I THINK - Tyler, The Creator - IGOR.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T01:59:39 player: played "IGOR'S THEME - Tyler, The Creator - IGOR.mp3"
+2025-12-08T01:59:44 update: updating /I THINK - Tyler, The Creator - IGOR.mp3
+2025-12-08T01:59:44 update: removing I THINK - Tyler, The Creator - IGOR.webm
+2025-12-08T02:00:01 player: played "EARFQUAKE - Tyler, The Creator - IGOR.mp3"
+2025-12-08T02:00:06 update: added /RUNNING OUT OF TIME - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:00:30 update: added /NEW MAGIC WAND - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:00:59 update: added /IGORS THEME - Tyler, The Creator - IGOR.webm
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T02:00:59 update: added /IGORS THEME - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:00:59 update: added /A BOY IS A GUN* - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:01:09 update: updating /IGORS THEME - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:01:09 update: removing IGORS THEME - Tyler, The Creator - IGOR.webm
+2025-12-08T02:01:21 update: added /PUPPET - Tyler, The Creator - IGOR.webm
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T02:01:21 update: added /PUPPET - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:01:21 update: updating /PUPPET - Tyler, The Creator - IGOR.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T02:01:21 update: updating /PUPPET - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:01:21 update: removing PUPPET - Tyler, The Creator - IGOR.webm
+2025-12-08T02:01:23 update: updating /PUPPET - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:02:16 player: played "IGOR'S THEME - Tyler, The Creator - IGOR.mp3"
+2025-12-08T02:02:23 player: played "EARFQUAKE - Tyler, The Creator - IGOR.mp3"
+2025-12-08T02:06:59 player: played "EARFQUAKE - Tyler, The Creator - IGOR.mp3"
+2025-12-08T02:08:12 update: added /WHAT'S GOOD - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:08:49 update: added GONE, GONE / THANK YOU - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:09:18 update: added /I DON'T LOVE YOU ANYMORE - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:09:48 update: added /ARE WE STILL FRIENDS? - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:11:23 player: played "1979 - Mareux - Decade.mp3"
+2025-12-08T02:14:16 player: played "Sail - Mareux - Decade.mp3"
+2025-12-08T02:14:32 update: updating /CHIHIRO - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T02:17:01 update: updating /SKINNY - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T02:17:14 update: updating /LUNCH - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T02:17:26 update: updating /CHIHIRO - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T02:17:46 update: updating /BIRDS OF A FEATHER - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T02:17:59 update: updating /WILDFLOWER - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T02:18:12 update: updating /THE GREATEST - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T02:18:25 update: updating /L'AMOUR DE MA VIE - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T02:18:37 update: updating /THE DINER - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T02:18:49 update: updating /BITTERSUITE - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T02:19:02 update: updating /BLUE - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T02:19:21 player: played "CHIHIRO - Billie Eilish - Hit Me Hard and Soft.mp3"
+2025-12-08T02:19:37 player: played "BITTERSUITE - Billie Eilish - Hit Me Hard and Soft.mp3"
+2025-12-08T02:26:35 update: added /BLUE - Billie Eilish - Hit Me Hard And Soft.webm
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+2025-12-08T02:26:35 update: added /BLUE - Billie Eilish - Hit Me Hard And Soft.mp3
+2025-12-08T02:26:35 update: removing BLUE - Billie Eilish - Hit Me Hard and Soft.mp3
+2025-12-08T02:26:44 update: updating /BLUE - Billie Eilish - Hit Me Hard And Soft.mp3
+2025-12-08T02:26:44 update: removing BLUE - Billie Eilish - Hit Me Hard And Soft.webm
+2025-12-08T02:36:01 player: played "Infinite Love Without Fulfillment - Grimes - Visions.mp3"
+2025-12-08T02:39:23 update: removing WHAT'S GOOD - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:39:23 update: removing RUNNING OUT OF TIME - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:39:23 update: removing PUPPET - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:39:23 update: removing NEW MAGIC WAND - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:39:23 update: removing IGORS THEME - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:39:23 update: removing IGOR'S THEME - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:39:23 update: removing I THINK - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:39:23 update: removing I DON'T LOVE YOU ANYMORE - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:39:23 update: removing EARFQUAKE - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:39:23 update: removing ARE WE STILL FRIENDS? - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:39:23 update: removing A BOY IS A GUN* - Tyler, The Creator - IGOR.mp3
+2025-12-08T02:39:23 update: removing IGOR'S THEME - Tyler, The Creator - IGOR.webm
+2025-12-08T02:40:18 player: played "Genesis - Grimes - Visions.mp3"
+2025-12-08T02:40:41 player: played "Oblivion - Grimes - Visions.mp3"
+2025-12-08T02:42:55 player: played "1979 - Mareux - Decade.mp3"
+2025-12-08T02:49:10 player: played "insectinsectinsect! - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3"
+2025-12-08T02:52:36 player: played "bad guy - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3"
+2025-12-08T02:57:01 player: played "xanny - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3"
+2025-12-08T03:00:06 player: played "you should see me in a crown - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3"

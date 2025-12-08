@@ -1,68 +1,113 @@
 #!/bin/bash
 
+# Dependency Check
+if ! command -v jq &> /dev/null; then
+    echo "❌ Error: 'jq' is not installed. Please install it for High-Res art parsing."
+    exit 1
+fi
+
 if [ "$#" -eq 0 ]; then
     echo "Usage: mfetch \"Song Title - Artist Name [- Album Name]\" ..."
     exit 1
 fi
 
 music_dir="$HOME/Music"
+temp_cover="/tmp/mfetch_cover.jpg"
 
 if ! command -v mpc &> /dev/null; then
     echo "⚠️ Warning: 'mpc' command not found. Skipping playlist update." >&2
 fi
 
-for query in "$@"; do
-    filename="${query}.mp3"
-
-    echo " Downloading: ${query}..."
-
-    # Download the audio
-    yt-dlp "ytsearch1:${query}" \
-        --ffmpeg-location "$(which ffmpeg)" \
-        --quiet \
-        --no-warnings \
-        --extract-audio \
-        --audio-format mp3 \
-        --output "${music_dir}/${filename}" \
-        --no-playlist
+# --- HELPER: iTunes High-Res Fetcher ---
+fetch_high_res_art() {
+    local query="$1"
+    # 1. Search iTunes for the track
+    # We use -s (silent) for curl and url-encode the query
+    local encoded_query
+    encoded_query=$(echo "$query" | jq -sRr @uri)
     
-    # --- Parsing Logic (Same) ---
-    title=$(echo "$query" | cut -d '-' -f1 | xargs)
-    rest=$(echo "$query" | cut -d '-' -f2- | xargs)
+    local response
+    response=$(curl -s "https://itunes.apple.com/search?term=${encoded_query}&entity=song&limit=1")
+    
+    # 2. Extract the 100x100 preview URL
+    local art_url
+    art_url=$(echo "$response" | jq -r '.results[0].artworkUrl100')
+    
+    # 3. Magic Trick: Rewrite URL to request 1000x1000 resolution
+    if [[ "$art_url" != "null" && -n "$art_url" ]]; then
+        local high_res_url
+        high_res_url=$(echo "$art_url" | sed 's/100x100bb.jpg/1000x1000bb.jpg/')
+        
+        # Download it
+        curl -s -o "$temp_cover" "$high_res_url"
+        
+        if [ -f "$temp_cover" ]; then
+            return 0 # Success
+        fi
+    fi
+    return 1 # Failure
+}
+
+
+for query in "$@"; do
+    # --- 1. PARSING LOGIC ---
+    title=$(echo "$query" | cut -d '-' -f1 | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+    rest=$(echo "$query" | cut -d '-' -f2- | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
 
     if [[ "$rest" == *"-"* ]]; then
-        artist=$(echo "$rest" | cut -d '-' -f1 | xargs)
-        album=$(echo "$rest" | cut -d '-' -f2- | xargs)
+        artist=$(echo "$rest" | cut -d '-' -f1 | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+        album=$(echo "$rest" | cut -d '-' -f2- | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
     else
         artist="$rest"
         album=""
     fi
 
-    # --- Tagging Logic (Same) ---
+    # --- 2. DOWNLOAD AUDIO (Default to YouTube Thumb first) ---
+    search_query="${title} - ${artist}"
+    filename="${query}.mp3"
+
+    echo " Downloading: ${search_query}..."
+
+    # We still use --embed-thumbnail as a fallback mechanism
+    yt-dlp "ytsearch1:${search_query}" \
+        --ffmpeg-location "$(which ffmpeg)" \
+        --quiet \
+        --no-warnings \
+        --extract-audio \
+        --audio-format mp3 \
+        --embed-thumbnail \
+        --output "${music_dir}/${filename}" \
+        --no-playlist
     
+    # --- 3. HIGH-RES ART UPGRADE ---
+    echo "   🔍 Searching for High-Res Cover Art..."
+    
+    # Try searching for "Artist Title" on iTunes
+    if fetch_high_res_art "${artist} ${title}"; then
+        echo "   ✨ High-Res Art Found! Applying..."
+        # Overwrite the YouTube thumbnail with the HD iTunes cover
+        eyeD3 --quiet --add-image "${temp_cover}:FRONT_COVER" "${music_dir}/${filename}" > /dev/null 2>&1
+        rm "$temp_cover"
+    else
+        echo "   ⚠️ High-Res not found. Keeping YouTube thumbnail."
+    fi
+
+    # --- 4. TAGGING METADATA ---
     echo "   🏷️ Tagging: Title: $title | Artist: $artist | Album: ${album:-N/A}"
     
     tag_options=(--title="$title" --artist="$artist")
     if [ -n "$album" ]; then
         tag_options+=(--album="$album")
     fi
-    eyeD3 "${tag_options[@]}" "${music_dir}/${filename}" > /dev/null
+    eyeD3 "${tag_options[@]}" "${music_dir}/${filename}" > /dev/null 2>&1
 
-    # --- NEW: Non-Destructive MPD Playlist Logic ---
+    # --- 5. PLAYLIST LOGIC ---
     if [ -n "$album" ] && command -v mpc &> /dev/null; then
-        # 1. Update MPD database to recognize the new file
         mpc update --wait 
-        
-        # We need the relative path MPD uses
         relative_path="${filename}" 
-
-        # 2. Add the file directly to the SAVED playlist.
-        # This command creates the playlist if it doesn't exist AND
-        # adds the file to it without touching the current playback queue.
         mpc addplaylist "$album" "$relative_path"
-        
-        echo "   🎶 Playlist: Added '${title}' to MPD playlist: '${album}' without disrupting playback."
+        echo "   🎶 Playlist: Added to '${album}'"
     fi
 
-    notify-send "✅ Download complete" "'${filename}' saved to Music and tagged."
+    notify-send "✅ Download complete" "'${filename}' saved."
 done

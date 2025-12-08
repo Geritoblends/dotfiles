@@ -37,6 +37,35 @@ tag: MUSICBRAINZ_RELEASETRACKID
 tag: MUSICBRAINZ_WORKID
 tag: MUSICBRAINZ_RELEASEGROUPID
 info_end
+directory: GONE, GONE 
+mtime: 1765181328
+begin: GONE, GONE 
+song_begin:  THANK YOU - Tyler, The Creator - IGOR.mp3
+Time: 377.289
+Artist: Tyler, The Creator
+Title: GONE, GONE / THANK YOU
+Album: IGOR
+Format: 48000:16:2
+mtime: 1765181329
+added: 1765181329
+song_end
+end: GONE, GONE 
+song_begin: &burn - Billie Eilish ft. Vince Staples - Don't Smile at Me.mp3
+Time: 180.024
+Artist: Billie Eilish ft. Vince Staples
+Title: &burn
+Format: 48000:16:2
+mtime: 1765177669
+added: 1765177665
+song_end
+song_begin: bellyache - Billie Eilish - Don't Smile at Me.mp3
+Time: 210.639
+Artist: Billie Eilish
+Title: bellyache
+Format: 48000:16:2
+mtime: 1765177592
+added: 1765177588
+song_end
 song_begin: Cariño - The Marías.mp3
 Time: 275.498
 Artist: The Marías
@@ -44,6 +73,14 @@ Title: Cariño
 Format: 48000:16:2
 mtime: 1764047573
 added: 1764718955
+song_end
+song_begin: COPYCAT - Billie Eilish - Don't Smile at Me.mp3
+Time: 197.834
+Artist: Billie Eilish
+Title: COPYCAT
+Format: 48000:16:2
+mtime: 1765177449
+added: 1765177441
 song_end
 song_begin: Crimewave - Crystal Castles.mp3
 Time: 258.471
@@ -77,6 +114,30 @@ Format: 48000:16:2
 mtime: 1758456656
 added: 1764718955
 song_end
+song_begin: hostage - Billie Eilish - Don't Smile at Me.mp3
+Time: 234.282
+Artist: Billie Eilish
+Title: hostage
+Format: 48000:16:2
+mtime: 1765177646
+added: 1765177638
+song_end
+song_begin: idontwannabeyouanymore - Billie Eilish - Don't Smile at Me.mp3
+Time: 204.463
+Artist: Billie Eilish
+Title: idontwannabeyouanymore
+Format: 48000:16:2
+mtime: 1765177472
+added: 1765177471
+song_end
+song_begin: my boy - Billie Eilish - Don't Smile at Me.mp3
+Time: 170.864
+Artist: Billie Eilish
+Title: my boy
+Format: 48000:16:2
+mtime: 1765177496
+added: 1765177500
+song_end
 song_begin: Nocturne - Chopin.mp3
 Time: 6867.011
 Artist: Chopin
@@ -84,6 +145,30 @@ Title: Nocturne
 Format: 48000:16:2
 mtime: 1758600762
 added: 1764718955
+song_end
+song_begin: ocean eyes - Billie Eilish - Don't Smile at Me.mp3
+Time: 200.376
+Artist: Billie Eilish
+Title: ocean eyes
+Format: 48000:16:2
+mtime: 1765177617
+added: 1765177616
+song_end
+song_begin: party favor - Billie Eilish - Don't Smile at Me.mp3
+Time: 203.55700000000002
+Artist: Billie Eilish
+Title: party favor
+Format: 48000:16:2
+mtime: 1765177558
+added: 1765177558
+song_end
+song_begin: watch - Billie Eilish - Don't Smile at Me.mp3
+Time: 199.169
+Artist: Billie Eilish
+Title: watch
+Format: 48000:16:2
+mtime: 1765177527
+added: 1765177520
 song_end
 song_begin: Abyss - Pastel Ghost - Abyss.mp3
 Time: 267.029
@@ -265,6 +350,96 @@ Format: 48000:16:2
 mtime: 1764210023
 added: 1764718955
 song_end
+song_begin: Cause I'm A Man - Tame Impala - Currents.mp3
+Time: 244.703
+Artist: Tame Impala
+Title: Cause
+Album: Currents
+Format: 48000:16:2
+mtime: 1765180042
+added: 1765180042
+song_end
+song_begin: Disciples - Tame Impala - Currents.mp3
+Time: 108.70400000000001
+Artist: Tame Impala
+Title: Disciples
+Album: Currents
+Format: 48000:16:2
+mtime: 1765180015
+added: 1765180015
+song_end
+song_begin: Eventually - Tame Impala - Currents.mp3
+Time: 319.72700000000003
+Artist: Tame Impala
+Title: Eventually
+Album: Currents
+Format: 48000:16:2
+mtime: 1765179938
+added: 1765179938
+song_end
+song_begin: Let It Happen - Tame Impala - Currents.mp3
+Time: 256.336
+Artist: Tame Impala
+Title: Let It Happen
+Album: Currents
+Format: 48000:16:2
+mtime: 1765179834
+added: 1765179834
+song_end
+song_begin: Nangs - Tame Impala - Currents.mp3
+Time: 108.53
+Artist: Tame Impala
+Title: Nangs
+Album: Currents
+Format: 48000:16:2
+mtime: 1765179853
+added: 1765179853
+song_end
+song_begin: New Person, Same Old Mistakes - Tame Impala - Currents.mp3
+Time: 364.23900000000003
+Artist: Tame Impala
+Title: New Person, Same Old Mistakes
+Album: Currents
+Format: 48000:16:2
+mtime: 1765180077
+added: 1765180077
+song_end
+song_begin: Past Life - Tame Impala - Currents.mp3
+Time: 229.064
+Artist: Tame Impala
+Title: Past Life
+Album: Currents
+Format: 48000:16:2
+mtime: 1765179994
+added: 1765179995
+song_end
+song_begin: The Less I Know The Better - Tame Impala - Currents.mp3
+Time: 217.35
+Artist: Tame Impala
+Title: The Less I Know The Better
+Album: Currents
+Format: 48000:16:2
+mtime: 1765179965
+added: 1765179965
+song_end
+song_begin: The Moment - Tame Impala - Currents.mp3
+Time: 256.42900000000003
+Artist: Tame Impala
+Title: The Moment
+Album: Currents
+Format: 48000:16:2
+mtime: 1765179881
+added: 1765179881
+song_end
+song_begin: Yes I'm Changing - Tame Impala - Currents.mp3
+Time: 271.696
+Artist: Tame Impala
+Title: Yes
+Album: Currents
+Format: 48000:16:2
+mtime: 1765179909
+added: 1765179909
+song_end
 song_begin: Antes de Ti - Bad Bunny - Debi Tirar Más Fotos.mp3
 Time: 240.245
 Artist: Bad Bunny
@@ -424,7 +599,7 @@ Artist: Mareux
 Title: 1979
 Album: Decade
 Format: 48000:16:2
-mtime: 1764122798
+mtime: 1765177405
 added: 1764718955
 song_end
 song_begin: Cold Summer - Mareux - Decade.mp3
@@ -433,7 +608,7 @@ Artist: Mareux
 Title: Cold Summer
 Album: Decade
 Format: 48000:16:2
-mtime: 1764123043
+mtime: 1765177448
 added: 1764718955
 song_end
 song_begin: Come Back To Me - Mareux - Decade.mp3
@@ -442,7 +617,7 @@ Artist: Mareux
 Title: Come Back To Me
 Album: Decade
 Format: 48000:16:2
-mtime: 1764122823
+mtime: 1765177414
 added: 1764718955
 song_end
 song_begin: Sail - Mareux - Decade.mp3
@@ -451,26 +626,295 @@ Artist: Mareux
 Title: Sail
 Album: Decade
 Format: 48000:16:2
-mtime: 1764123029
+mtime: 1765177431
 added: 1764718955
 song_end
+song_begin: Billie Bossa Nova - Billie Eilish - Happier Than Ever.mp3
+Time: 196.823
+Artist: Billie Eilish
+Title: Billie Bossa Nova
+Album: Happier Than Ever
+Format: 48000:16:2
+mtime: 1765177508
+added: 1765177500
+song_end
+song_begin: Getting Older - Billie Eilish - Happier Than Ever.mp3
+Time: 244.297
+Artist: Billie Eilish
+Title: Getting Older
+Album: Happier Than Ever
+Format: 48000:16:2
+mtime: 1765177437
+added: 1765177427
+song_end
+song_begin: Halley's Comet - Billie Eilish - Happier Than Ever.mp3
+Time: 29.199
+Artist: Billie Eilish
+Album: Happier Than Ever
+Format: 48000:16:2
+mtime: 1765177941
+added: 1765177638
+song_end
+song_begin: I Didn't Change My Number - Billie Eilish - Happier Than Ever.mp3
+Time: 230.794
+Artist: Billie Eilish
+Title: I
+Album: Happier Than Ever
+Format: 48000:16:2
+mtime: 1765177475
+added: 1765177459
+song_end
+song_begin: Lost Cause - Billie Eilish - Happier Than Ever.mp3
+Time: 228.484
+Artist: Billie Eilish
+Title: Lost Cause
+Album: Happier Than Ever
+Format: 48000:16:2
+mtime: 1765177620
+added: 1765177616
+song_end
+song_begin: my future - Billie Eilish - Happier Than Ever.mp3
+Time: 229.401
+Artist: Billie Eilish
+Title: my future
+Album: Happier Than Ever
+Format: 48000:16:2
+mtime: 1765177541
+added: 1765177529
+song_end
+song_begin: Oxytocin - Billie Eilish - Happier Than Ever.mp3
+Time: 210.33700000000002
+Artist: Billie Eilish
+Title: Oxytocin
+Album: Happier Than Ever
+Format: 48000:16:2
+mtime: 1765177571
+added: 1765177558
+song_end
+song_begin: BIRDS OF A FEATHER - Billie Eilish - Hit Me Hard and Soft.mp3
+Time: 230.794
+Artist: Billie Eilish
+Title: BIRDS OF A FEATHER
+Album: Hit Me Hard and Soft
+Format: 48000:16:2
+mtime: 1765181865
+added: 1765177508
+song_end
+song_begin: BITTERSUITE - Billie Eilish - Hit Me Hard and Soft.mp3
+Time: 298.469
+Artist: Billie Eilish
+Title: BITTERSUITE
+Album: Hit Me Hard and Soft
+Format: 48000:16:2
+mtime: 1765181929
+added: 1765177659
+song_end
+song_begin: CHIHIRO - Billie Eilish - Hit Me Hard and Soft.mp3
+Time: 323.581
+Artist: Billie Eilish
+Title: CHIHIRO
+Album: Hit Me Hard and Soft
+Format: 48000:16:2
+mtime: 1765181846
+added: 1765177475
+song_end
+song_begin: L'AMOUR DE MA VIE - Billie Eilish - Hit Me Hard and Soft.mp3
+Time: 230.794
+Artist: Billie Eilish
+Title: L'AMOUR DE MA VIE
+Album: Hit Me Hard and Soft
+Format: 48000:16:2
+mtime: 1765181905
+added: 1765177616
+song_end
+song_begin: LUNCH - Billie Eilish - Hit Me Hard and Soft.mp3
+Time: 202.62800000000001
+Artist: Billie Eilish
+Title: LUNCH
+Album: Hit Me Hard and Soft
+Format: 48000:16:2
+mtime: 1765181834
+added: 1765177444
+song_end
+song_begin: SKINNY - Billie Eilish - Hit Me Hard and Soft.mp3
+Time: 219.834
+Artist: Billie Eilish
+Title: SKINNY
+Album: Hit Me Hard and Soft
+Format: 48000:16:2
+mtime: 1765181821
+added: 1765177427
+song_end
+song_begin: THE DINER - Billie Eilish - Hit Me Hard and Soft.mp3
+Time: 186.049
+Artist: Billie Eilish
+Title: THE DINER
+Album: Hit Me Hard and Soft
+Format: 48000:16:2
+mtime: 1765181917
+added: 1765177634
+song_end
+song_begin: THE GREATEST - Billie Eilish - Hit Me Hard and Soft.mp3
+Time: 293.883
+Artist: Billie Eilish
+Title: THE GREATEST
+Album: Hit Me Hard and Soft
+Format: 48000:16:2
+mtime: 1765181892
+added: 1765177588
+song_end
+song_begin: WILDFLOWER - Billie Eilish - Hit Me Hard and Soft.mp3
+Time: 261.212
+Artist: Billie Eilish
+Title: WILDFLOWER
+Album: Hit Me Hard and Soft
+Format: 48000:16:2
+mtime: 1765181879
+added: 1765177558
+song_end
+song_begin: BLUE - Billie Eilish - Hit Me Hard And Soft.mp3
+Time: 343.37600000000003
+Artist: Billie Eilish
+Title: BLUE
+Album: Hit Me Hard And Soft
+Format: 48000:16:2
+mtime: 1765182404
+added: 1765182395
+song_end
+song_begin: Midnight City - M83 - Hurry Up, We're Dreaming.mp3
+Time: 243.18200000000002
+Artist: M83
+Title: Midnight City
+Album: Hurry Up,
+Format: 48000:16:2
+mtime: 1765174335
+added: 1765174335
+song_end
+song_begin: Chaeri - Magdalena Bay - Mercurial World.mp3
+Time: 280.531
+Artist: Magdalena Bay
+Title: Chaeri
+Album: Mercurial World
+Format: 48000:16:2
+mtime: 1765175878
+added: 1765175878
+song_end
+song_begin: Dawning of the Season - Magdalena Bay - Mercurial World.mp3
+Time: 204.33
+Artist: Magdalena Bay
+Title: Dawning of the Season
+Album: Mercurial World
+Format: 48000:16:2
+mtime: 1765175805
+added: 1765175805
+song_end
+song_begin: Domino - Magdalena Bay - Mercurial World.mp3
+Time: 222.528
+Artist: Magdalena Bay
+Title: Domino
+Album: Mercurial World
+Format: 48000:16:2
+mtime: 1765175929
+added: 1765175929
+song_end
+song_begin: Dreamcatching - Magdalena Bay - Mercurial World.mp3
+Time: 212.648
+Artist: Magdalena Bay
+Title: Dreamcatching
+Album: Mercurial World
+Format: 48000:16:2
+mtime: 1765175948
+added: 1765175948
+song_end
+song_begin: Hysterical Us - Magdalena Bay - Mercurial World.mp3
+Time: 248.12800000000001
+Artist: Magdalena Bay
+Title: Hysterical Us
+Album: Mercurial World
+Format: 48000:16:2
+mtime: 1765175896
+added: 1765175896
+song_end
+song_begin: Mercurial World - Magdalena Bay - Mercurial World.mp3
+Time: 2764.904
+Artist: Magdalena Bay
+Title: Mercurial World
+Album: Mercurial World
+Format: 48000:16:2
+mtime: 1765175788
+added: 1765175788
+song_end
+song_begin: Prophecy - Magdalena Bay - Mercurial World.mp3
+Time: 214.933
+Artist: Magdalena Bay
+Title: Prophecy
+Album: Mercurial World
+Format: 48000:16:2
+mtime: 1765175912
+added: 1765175912
+song_end
+song_begin: Secrets (Your Fire) - Magdalena Bay - Mercurial World.mp3
+Time: 248.80100000000002
+Artist: Magdalena Bay
+Title: Secrets (Your Fire)
+Album: Mercurial World
+Format: 48000:16:2
+mtime: 1765175822
+added: 1765175823
+song_end
+song_begin: Something for 2 - Magdalena Bay - Mercurial World.mp3
+Time: 216.341
+Artist: Magdalena Bay
+Title: Something for 2
+Album: Mercurial World
+Format: 48000:16:2
+mtime: 1765175858
+added: 1765175858
+song_end
+song_begin: The Beginning - Magdalena Bay - Mercurial World.mp3
+Time: 250.636
+Artist: Magdalena Bay
+Title: The Beginning
+Album: Mercurial World
+Format: 48000:16:2
+mtime: 1765175965
+added: 1765175965
+song_end
+song_begin: The End - Magdalena Bay - Mercurial World.mp3
+Time: 31.466
+Artist: Magdalena Bay
+Title: The End
+Album: Mercurial World
+Format: 48000:16:2
+mtime: 1765175713
+added: 1765175713
+song_end
+song_begin: You Lose! - Magdalena Bay - Mercurial World.mp3
+Time: 235.508
+Artist: Magdalena Bay
+Title: You Lose!
+Album: Mercurial World
+Format: 48000:16:2
+mtime: 1765175840
+added: 1765175840
+song_end
 song_begin: Blackmail - Mareux - Nonstop Romance.mp3
-Time: 169.54
+Time: 167.079
 Artist: Mareux
 Title: Blackmail
 Album: Nonstop Romance
 Format: 48000:16:2
-mtime: 1764121019
-added: 1764718955
+mtime: 1765177406
+added: 1765172218
 song_end
 song_begin: Blue - Mareux - Nonstop Romance.mp3
-Time: 1584.843
+Time: 157.675
 Artist: Mareux
 Title: Blue
 Album: Nonstop Romance
 Format: 48000:16:2
-mtime: 1764121960
-added: 1764718955
+mtime: 1765177486
+added: 1765172309
 song_end
 song_begin: Ébène Fumé - Mareux ft. Riki - Nonstop Romance.mp3
 Time: 272.95
@@ -478,8 +922,8 @@ Artist: Mareux ft. Riki
 Title: Ébène Fumé
 Album: Nonstop Romance
 Format: 48000:16:2
-mtime: 1764121037
-added: 1764718955
+mtime: 1765177459
+added: 1765172279
 song_end
 song_begin: Laugh Now Cry Later - Mareux - Nonstop Romance.mp3
 Time: 200.005
@@ -487,8 +931,8 @@ Artist: Mareux
 Title: Laugh Now Cry Later
 Album: Nonstop Romance
 Format: 48000:16:2
-mtime: 1764121808
-added: 1764718955
+mtime: 1765177501
+added: 1765172325
 song_end
 song_begin: Nonstop Romance - Mareux - Nonstop Romance.mp3
 Time: 169.54
@@ -496,26 +940,26 @@ Artist: Mareux
 Title: Nonstop Romance
 Album: Nonstop Romance
 Format: 48000:16:2
-mtime: 1764120928
-added: 1764718955
+mtime: 1765177430
+added: 1765172247
 song_end
 song_begin: Prodigy - Mareux - Nonstop Romance.mp3
-Time: 169.54
+Time: 131.204
 Artist: Mareux
 Title: Prodigy
 Album: Nonstop Romance
 Format: 48000:16:2
-mtime: 1764121143
-added: 1764718955
+mtime: 1765177477
+added: 1765172293
 song_end
 song_begin: Radio Club - Mareux - Nonstop Romance.mp3
-Time: 169.54
+Time: 183.344
 Artist: Mareux
 Title: Radio Club
 Album: Nonstop Romance
 Format: 48000:16:2
-mtime: 1764121029
-added: 1764718955
+mtime: 1765177415
+added: 1765172233
 song_end
 song_begin: Snake Eyes - Mareux - Nonstop Romance.mp3
 Time: 162.214
@@ -523,17 +967,17 @@ Artist: Mareux
 Title: Snake Eyes
 Album: Nonstop Romance
 Format: 48000:16:2
-mtime: 1764121986
-added: 1764718955
+mtime: 1765177520
+added: 1765172346
 song_end
-song_begin: Wild at Heart - Mareux - Nonstop Romance.mp3
-Time: 150.418
+song_begin: Wild At Heart - Mareux - Nonstop Romance.mp3
+Time: 150.012
 Artist: Mareux
-Title: Wild at Heart
+Title: Wild At Heart
 Album: Nonstop Romance
 Format: 48000:16:2
-mtime: 1764120958
-added: 1764718955
+mtime: 1765177445
+added: 1765172261
 song_end
 song_begin: Black Beauty - Lana Del Rey - Ultraviolence.mp3
 Time: 314.533
@@ -651,4 +1095,229 @@ Album: Ultraviolence
 Format: 48000:16:2
 mtime: 1764128761
 added: 1764718955
+song_end
+song_begin: Be a Body - Grimes - Visions.mp3
+Time: 260.413
+Artist: Grimes
+Title: Be a Body
+Album: Visions
+Format: 48000:16:2
+mtime: 1765174887
+added: 1765174887
+song_end
+song_begin: Circumambient - Grimes - Visions.mp3
+Time: 223.026
+Artist: Grimes
+Title: Circumambient
+Album: Visions
+Format: 48000:16:2
+mtime: 1765174840
+added: 1765174840
+song_end
+song_begin: Colour of Moonlight (Antiochus) - Grimes - Visions.mp3
+Time: 239.70600000000002
+Artist: Grimes
+Title: Colour of Moonlight (Antiochus)
+Album: Visions
+Format: 48000:16:2
+mtime: 1765174904
+added: 1765174904
+song_end
+song_begin: Eight - Grimes - Visions.mp3
+Time: 107.85300000000001
+Artist: Grimes
+Title: Eight
+Album: Visions
+Format: 48000:16:2
+mtime: 1765175685
+added: 1765174824
+song_end
+song_begin: Genesis - Grimes - Visions.mp3
+Time: 257.195
+Artist: Grimes
+Title: Genesis
+Album: Visions
+Format: 48000:16:2
+mtime: 1765175671
+added: 1765174796
+song_end
+song_begin: Infinite Love Without Fulfillment - Grimes - Visions.mp3
+Time: 95.346
+Artist: Grimes
+Title: Infinite Love Without Fulfillment
+Album: Visions
+Format: 48000:16:2
+mtime: 1765175662
+added: 1765174780
+song_end
+song_begin: Nightmusic - Grimes ft. Majical Cloudz - Visions.mp3
+Time: 298.608
+Artist: Grimes ft. Majical Cloudz
+Title: Nightmusic
+Album: Visions
+Format: 48000:16:2
+mtime: 1765174940
+added: 1765174940
+song_end
+song_begin: Oblivion - Grimes - Visions.mp3
+Time: 251.762
+Artist: Grimes
+Title: Oblivion
+Album: Visions
+Format: 48000:16:2
+mtime: 1765175679
+added: 1765174811
+song_end
+song_begin: Symphonia IX (My Wait Is U) - Grimes - Visions.mp3
+Time: 292.50600000000003
+Artist: Grimes
+Title: Symphonia IX (My Wait Is U)
+Album: Visions
+Format: 48000:16:2
+mtime: 1765174923
+added: 1765174923
+song_end
+song_begin: Visiting Statue - Grimes - Visions.mp3
+Time: 118.85300000000001
+Artist: Grimes
+Title: Visiting Statue
+Album: Visions
+Format: 48000:16:2
+mtime: 1765174872
+added: 1765174872
+song_end
+song_begin: Vowels = Space and Time - Grimes - Visions.mp3
+Time: 261.12
+Artist: Grimes
+Title: Vowels = Space and Time
+Album: Visions
+Format: 48000:16:2
+mtime: 1765174857
+added: 1765174857
+song_end
+song_begin: 8 - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+Time: 173.201
+Artist: Billie Eilish
+Title: 8
+Album: When We All Fall Asleep, Where Do We Go?
+Format: 48000:16:2
+mtime: 1765177634
+added: 1765177634
+song_end
+song_begin: all the good girls go to hell - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+Time: 221.1
+Artist: Billie Eilish
+Title: all the good girls go to hell
+Album: When We All Fall Asleep, Where Do We Go?
+Format: 48000:16:2
+mtime: 1765177564
+added: 1765177558
+song_end
+song_begin: bad guy - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+Time: 205.92600000000002
+Artist: Billie Eilish
+Title: bad guy
+Album: When We All Fall Asleep, Where Do We Go?
+Format: 48000:16:2
+mtime: 1765177471
+added: 1765177459
+song_end
+song_begin: bury a friend - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+Time: 212.00900000000001
+Artist: Billie Eilish
+Title: bury a friend
+Album: When We All Fall Asleep, Where Do We Go?
+Format: 48000:16:2
+mtime: 1765177678
+added: 1765177678
+song_end
+song_begin: goodbye - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+Time: 119.409
+Artist: Billie Eilish
+Title: goodbye
+Album: When We All Fall Asleep, Where Do We Go?
+Format: 48000:16:2
+mtime: 1765177743
+added: 1765177743
+song_end
+song_begin: i love you - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+Time: 291.796
+Artist: Billie Eilish
+Title: i love you
+Album: When We All Fall Asleep, Where Do We Go?
+Format: 48000:16:2
+mtime: 1765177729
+added: 1765177729
+song_end
+song_begin: ilomilo - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+Time: 156.897
+Artist: Billie Eilish
+Title: ilomilo
+Album: When We All Fall Asleep, Where Do We Go?
+Format: 48000:16:2
+mtime: 1765177695
+added: 1765177694
+song_end
+song_begin: insectinsectinsect! - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+Time: 205.92600000000002
+Artist: Billie Eilish
+Title: insectinsectinsect!
+Album: When We All Fall Asleep, Where Do We Go?
+Format: 48000:16:2
+mtime: 1765177441
+added: 1765177431
+song_end
+song_begin: listen before i go - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+Time: 242.65200000000002
+Artist: Billie Eilish
+Title: listen before i go
+Album: When We All Fall Asleep, Where Do We Go?
+Format: 48000:16:2
+mtime: 1765177713
+added: 1765177713
+song_end
+song_begin: my strange addiction - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+Time: 179.989
+Artist: Billie Eilish
+Title: my strange addiction
+Album: When We All Fall Asleep, Where Do We Go?
+Format: 48000:16:2
+mtime: 1765177658
+added: 1765177659
+song_end
+song_begin: when the party's over - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+Time: 193.322
+Artist: Billie Eilish
+Title: when the
+Album: When We All Fall Asleep, Where Do We Go?
+Format: 48000:16:2
+mtime: 1765177616
+added: 1765177616
+song_end
+song_begin: wish you were gay - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+Time: 221.269
+Artist: Billie Eilish
+Title: wish you were gay
+Album: When We All Fall Asleep, Where Do We Go?
+Format: 48000:16:2
+mtime: 1765177592
+added: 1765177588
+song_end
+song_begin: xanny - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+Time: 265.557
+Artist: Billie Eilish
+Title: xanny
+Album: When We All Fall Asleep, Where Do We Go?
+Format: 48000:16:2
+mtime: 1765177500
+added: 1765177500
+song_end
+song_begin: you should see me in a crown - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+Time: 180.65
+Artist: Billie Eilish
+Title: you should see me in a crown
+Album: When We All Fall Asleep, Where Do We Go?
+Format: 48000:16:2
+mtime: 1765177529
+added: 1765177522
 song_end

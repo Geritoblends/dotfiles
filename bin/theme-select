@@ -1,27 +1,57 @@
 #!/bin/bash
 
-# Paths (Source of Truth)
+# Paths
 DOTS_DIR="$HOME/nix-dots"
 SCHEME_DIR="$DOTS_DIR/config/wal/colorschemes"
 LAYOUT_DIR="$DOTS_DIR/layouts"
 
-# 1. Select Color Scheme
-# List .json files, strip extension
-COLORSCHEME=$(ls "$SCHEME_DIR" | grep ".json" | sed 's/.json//' | fuzzel --dmenu --prompt="🎨 Theme: " -l 10)
+# --- HELPER FUNCTIONS ---
 
-# Exit if cancelled
-if [ -z "$COLORSCHEME" ]; then
-    exit 0
-fi
+select_color() {
+    ls "$SCHEME_DIR" | grep ".json" | sed 's/.json//' | fuzzel --dmenu --prompt="🎨 Theme: " -l 10
+}
 
-# 2. Select Layout
-# List folders in the layouts directory
-LAYOUT=$(ls -d "$LAYOUT_DIR"/*/ | xargs -n 1 basename | fuzzel --dmenu --prompt="📐 Layout: " -l 5)
+select_layout() {
+    ls -d "$LAYOUT_DIR"/*/ | xargs -n 1 basename | fuzzel --dmenu --prompt="📐 Layout: " -l 5
+}
 
-# 3. Execution
-if [ -z "$LAYOUT" ]; then
-    # If user cancels layout, run with just color (theme script defaults to 'default')
-    theme "$COLORSCHEME"
-else
-    theme "$COLORSCHEME" "$LAYOUT"
-fi
+# --- MAIN MENU ---
+
+# 1. Ask what to change
+MODE=$(echo -e "🎨 Colors Only\n📐 Layout Only\n🚀 Both" | fuzzel --dmenu --prompt="Change: " -l 3)
+
+# 2. Handle Selection
+case "$MODE" in
+    "🎨 Colors Only")
+        COLOR=$(select_color)
+        if [ -n "$COLOR" ]; then
+            theme -c "$COLOR"
+        fi
+        ;;
+        
+    "📐 Layout Only")
+        LAYOUT=$(select_layout)
+        if [ -n "$LAYOUT" ]; then
+            theme -l "$LAYOUT"
+        fi
+        ;;
+        
+    "🚀 Both")
+        COLOR=$(select_color)
+        # If color cancelled, abort everything
+        if [ -z "$COLOR" ]; then exit 0; fi
+        
+        LAYOUT=$(select_layout)
+        
+        if [ -n "$LAYOUT" ]; then
+            theme -c "$COLOR" -l "$LAYOUT"
+        else
+            # Fallback: User picked color but cancelled layout -> Apply color only
+            theme -c "$COLOR"
+        fi
+        ;;
+        
+    *)
+        exit 0
+        ;;
+esac
