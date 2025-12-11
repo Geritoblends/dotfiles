@@ -1,0 +1,24 @@
+[global]
+    font = "Inter", "JetBrainsMono NF" 12
+    width = 300
+    padding = 20
+    corner_radius = 0
+    frame_width = 3
+    background = "{background}"
+    foreground = "{foreground}"
+    frame_color = "{foreground}"
+    gap_size = 5
+
+[urgency_low]
+    timeout = 3
+    frame_color = "{foreground}"
+    foreground = "{foreground}"
+
+[urgency_normal]
+    timeout = 5
+    frame_color = "{foreground}"
+
+[urgency_critical]
+    timeout = 15
+    foreground = "{color1}"
+    frame_color = "{color1}"

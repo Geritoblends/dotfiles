@@ -61,7 +61,7 @@ rmfm() {
 
 nvimf() {
   local file
-  file=$(fd --hidden --exclude .git --type f | fzf) && nvim "$file"
+  file=$(fd --hidden --exclude .git --type f | fzf) && command nvim --listen /tmp/nvim.$$.0 "$file"
 }
 
 nvimrg() {
@@ -366,4 +366,25 @@ iphone-copy() {
     echo "__TERMIUS_COPY_BEGIN__"
     cat "$@" 2>/dev/null || echo "$@"
     echo "__TERMIUS_COPY_END__"
+}
+
+max-fans() {
+  echo 1 | sudo tee /sys/devices/platform/applesmc.768/fan1_manual
+  echo 6500 | sudo tee /sys/devices/platform/applesmc.768/fan1_output
+}
+
+normal-fans() {
+  echo 0 | sudo tee /sys/devices/platform/applesmc.768/fan1_manual
+}
+
+
+disable-turbo() {
+  sudo systemctl stop auto-cpufreq
+  echo 1 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
+}
+
+
+enable-turbo() {
+  echo 0 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
+  sudo systemctl start auto-cpufreq
 }

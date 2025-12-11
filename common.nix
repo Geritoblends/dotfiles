@@ -17,10 +17,7 @@ in
     bind nmap netcat-openbsd httpie whois
     
     # --- 💻 Dev & Build ---
-    gcc gnumake just mold git-lfs gh glab
-    
-    # --- 🐍 Languages ---
-    nodejs_22 deno python3 rustup
+    just git-lfs gh glab
     
     # --- 📊 Monitoring ---
     htop bottom ncdu

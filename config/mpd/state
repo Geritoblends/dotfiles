@@ -1,8 +1,8 @@
 sw_volume: 100
 audio_device_state:1:MPD Audio
-state: play
-current: 22
-time: 155.536
+state: pause
+current: 11
+time: 10.792
 random: 0
 repeat: 1
 single: 0
@@ -10,37 +10,151 @@ consume: 0
 crossfade: 0
 mixrampdb: 0
 mixrampdelay: -1
-lastloadedplaylist: When We All Fall Asleep, Where Do We Go?
+lastloadedplaylist: Abyss
 playlist_begin
-0:1979 - Mareux - Decade.mp3
-1:Sail - Mareux - Decade.mp3
-2:Cold Summer - Mareux - Decade.mp3
-3:1979 - Mareux - Decade.mp3
-4:Come Back To Me - Mareux - Decade.mp3
-5:Sail - Mareux - Decade.mp3
-6:Cold Summer - Mareux - Decade.mp3
-7:Let It Happen - Tame Impala - Currents.mp3
-8:Nangs - Tame Impala - Currents.mp3
-9:The Moment - Tame Impala - Currents.mp3
-10:Yes I'm Changing - Tame Impala - Currents.mp3
-11:Eventually - Tame Impala - Currents.mp3
-12:The Less I Know The Better - Tame Impala - Currents.mp3
-13:Past Life - Tame Impala - Currents.mp3
-14:Disciples - Tame Impala - Currents.mp3
-15:Cause I'm A Man - Tame Impala - Currents.mp3
-16:New Person, Same Old Mistakes - Tame Impala - Currents.mp3
-17:insectinsectinsect! - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
-18:bad guy - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
-19:xanny - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
-20:you should see me in a crown - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
-21:all the good girls go to hell - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
-22:wish you were gay - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
-23:when the party's over - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
-24:8 - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
-25:my strange addiction - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
-26:bury a friend - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
-27:ilomilo - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
-28:listen before i go - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
-29:i love you - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
-30:goodbye - Billie Eilish - When We All Fall Asleep, Where Do We Go?.mp3
+0:Infinite Love Without Fulfillment - Grimes - Visions.mp3
+1:Genesis - Grimes - Visions.mp3
+2:Oblivion - Grimes - Visions.mp3
+3:Eight - Grimes - Visions.mp3
+4:Circumambient - Grimes - Visions.mp3
+5:Vowels = Space and Time - Grimes - Visions.mp3
+6:Visiting Statue - Grimes - Visions.mp3
+7:Be a Body - Grimes - Visions.mp3
+8:Colour of Moonlight (Antiochus) - Grimes - Visions.mp3
+9:Symphonia IX (My Wait Is U) - Grimes - Visions.mp3
+10:Nightmusic - Grimes ft. Majical Cloudz - Visions.mp3
+11:Infinite Love Without Fulfillment - Grimes - Visions.mp3
+12:Genesis - Grimes - Visions.mp3
+13:Oblivion - Grimes - Visions.mp3
+14:Eight - Grimes - Visions.mp3
+15:Circumambient - Grimes - Visions.mp3
+16:Blackmail - Mareux - Nonstop Romance.mp3
+17:Radio Club - Mareux - Nonstop Romance.mp3
+18:Nonstop Romance - Mareux - Nonstop Romance.mp3
+19:Wild At Heart - Mareux - Nonstop Romance.mp3
+20:Ébène Fumé - Mareux ft. Riki - Nonstop Romance.mp3
+21:Prodigy - Mareux - Nonstop Romance.mp3
+22:Blue - Mareux - Nonstop Romance.mp3
+23:Laugh Now Cry Later - Mareux - Nonstop Romance.mp3
+24:Snake Eyes - Mareux - Nonstop Romance.mp3
+25:Blackmail - Mareux - Nonstop Romance.mp3
+26:Radio Club - Mareux - Nonstop Romance.mp3
+27:Nonstop Romance - Mareux - Nonstop Romance.mp3
+28:Wild At Heart - Mareux - Nonstop Romance.mp3
+29:Ébène Fumé - Mareux ft. Riki - Nonstop Romance.mp3
+30:Prodigy - Mareux - Nonstop Romance.mp3
+31:Blue - Mareux - Nonstop Romance.mp3
+32:Laugh Now Cry Later - Mareux - Nonstop Romance.mp3
+33:Snake Eyes - Mareux - Nonstop Romance.mp3
+34:Blackmail - Mareux - Nonstop Romance.mp3
+35:Radio Club - Mareux - Nonstop Romance.mp3
+36:Nonstop Romance - Mareux - Nonstop Romance.mp3
+37:Wild At Heart - Mareux - Nonstop Romance.mp3
+38:Ébène Fumé - Mareux ft. Riki - Nonstop Romance.mp3
+39:Prodigy - Mareux - Nonstop Romance.mp3
+40:Blue - Mareux - Nonstop Romance.mp3
+41:Laugh Now Cry Later - Mareux - Nonstop Romance.mp3
+42:Snake Eyes - Mareux - Nonstop Romance.mp3
+43:Prism - Pastel Ghost - Abyss.mp3
+44:Embrace - Pastel Ghost - Abyss.mp3
+45:Clouds - Pastel Ghost - Abyss.mp3
+46:Shadows - Pastel Ghost - Abyss.mp3
+47:Skeleton - Pastel Ghost - Abyss.mp3
+48:Dark Beach - Pastel Ghost - Abyss.mp3
+49:Translucid - Pastel Ghost - Abyss.mp3
+50:Lilacs - Pastel Ghost - Abyss.mp3
+51:Pulse - Pastel Ghost - Abyss.mp3
+52:Abyss - Pastel Ghost - Abyss.mp3
+53:Blackmail - Mareux - Nonstop Romance.mp3
+54:Radio Club - Mareux - Nonstop Romance.mp3
+55:Nonstop Romance - Mareux - Nonstop Romance.mp3
+56:Wild At Heart - Mareux - Nonstop Romance.mp3
+57:Ébène Fumé - Mareux ft. Riki - Nonstop Romance.mp3
+58:Prodigy - Mareux - Nonstop Romance.mp3
+59:Blue - Mareux - Nonstop Romance.mp3
+60:Laugh Now Cry Later - Mareux - Nonstop Romance.mp3
+61:Snake Eyes - Mareux - Nonstop Romance.mp3
+62:Blackmail - Mareux - Nonstop Romance.mp3
+63:Radio Club - Mareux - Nonstop Romance.mp3
+64:Nonstop Romance - Mareux - Nonstop Romance.mp3
+65:Wild At Heart - Mareux - Nonstop Romance.mp3
+66:Ébène Fumé - Mareux ft. Riki - Nonstop Romance.mp3
+67:Prodigy - Mareux - Nonstop Romance.mp3
+68:Blue - Mareux - Nonstop Romance.mp3
+69:Laugh Now Cry Later - Mareux - Nonstop Romance.mp3
+70:Snake Eyes - Mareux - Nonstop Romance.mp3
+71:Blackmail - Mareux - Nonstop Romance.mp3
+72:Radio Club - Mareux - Nonstop Romance.mp3
+73:Nonstop Romance - Mareux - Nonstop Romance.mp3
+74:Wild At Heart - Mareux - Nonstop Romance.mp3
+75:Ébène Fumé - Mareux ft. Riki - Nonstop Romance.mp3
+76:Prodigy - Mareux - Nonstop Romance.mp3
+77:Blue - Mareux - Nonstop Romance.mp3
+78:Laugh Now Cry Later - Mareux - Nonstop Romance.mp3
+79:Snake Eyes - Mareux - Nonstop Romance.mp3
+80:1979 - Mareux - Decade.mp3
+81:Sail - Mareux - Decade.mp3
+82:Cold Summer - Mareux - Decade.mp3
+83:1979 - Mareux - Decade.mp3
+84:Come Back To Me - Mareux - Decade.mp3
+85:Sail - Mareux - Decade.mp3
+86:Cold Summer - Mareux - Decade.mp3
+87:Let It Happen - Tame Impala - Currents.mp3
+88:Nangs - Tame Impala - Currents.mp3
+89:The Moment - Tame Impala - Currents.mp3
+90:Yes I'm Changing - Tame Impala - Currents.mp3
+91:Eventually - Tame Impala - Currents.mp3
+92:The Less I Know The Better - Tame Impala - Currents.mp3
+93:Past Life - Tame Impala - Currents.mp3
+94:Disciples - Tame Impala - Currents.mp3
+95:Cause I'm A Man - Tame Impala - Currents.mp3
+96:New Person, Same Old Mistakes - Tame Impala - Currents.mp3
+97:The End - Magdalena Bay - Mercurial World.mp3
+98:Mercurial World - Magdalena Bay - Mercurial World.mp3
+99:Dawning of the Season - Magdalena Bay - Mercurial World.mp3
+100:Secrets (Your Fire) - Magdalena Bay - Mercurial World.mp3
+101:You Lose! - Magdalena Bay - Mercurial World.mp3
+102:Something for 2 - Magdalena Bay - Mercurial World.mp3
+103:Chaeri - Magdalena Bay - Mercurial World.mp3
+104:Hysterical Us - Magdalena Bay - Mercurial World.mp3
+105:Prophecy - Magdalena Bay - Mercurial World.mp3
+106:Domino - Magdalena Bay - Mercurial World.mp3
+107:Dreamcatching - Magdalena Bay - Mercurial World.mp3
+108:The Beginning - Magdalena Bay - Mercurial World.mp3
+109:Infinite Love Without Fulfillment - Grimes - Visions.mp3
+110:Genesis - Grimes - Visions.mp3
+111:Oblivion - Grimes - Visions.mp3
+112:Eight - Grimes - Visions.mp3
+113:Circumambient - Grimes - Visions.mp3
+114:Vowels = Space and Time - Grimes - Visions.mp3
+115:Visiting Statue - Grimes - Visions.mp3
+116:Be a Body - Grimes - Visions.mp3
+117:Colour of Moonlight (Antiochus) - Grimes - Visions.mp3
+118:Symphonia IX (My Wait Is U) - Grimes - Visions.mp3
+119:Nightmusic - Grimes ft. Majical Cloudz - Visions.mp3
+120:Infinite Love Without Fulfillment - Grimes - Visions.mp3
+121:Genesis - Grimes - Visions.mp3
+122:Oblivion - Grimes - Visions.mp3
+123:Eight - Grimes - Visions.mp3
+124:Circumambient - Grimes - Visions.mp3
+125:Prism - Pastel Ghost - Abyss.mp3
+126:Embrace - Pastel Ghost - Abyss.mp3
+127:Clouds - Pastel Ghost - Abyss.mp3
+128:Shadows - Pastel Ghost - Abyss.mp3
+129:Skeleton - Pastel Ghost - Abyss.mp3
+130:Dark Beach - Pastel Ghost - Abyss.mp3
+131:Translucid - Pastel Ghost - Abyss.mp3
+132:Lilacs - Pastel Ghost - Abyss.mp3
+133:Pulse - Pastel Ghost - Abyss.mp3
+134:Abyss - Pastel Ghost - Abyss.mp3
+135:Prism - Pastel Ghost - Abyss.mp3
+136:Embrace - Pastel Ghost - Abyss.mp3
+137:Clouds - Pastel Ghost - Abyss.mp3
+138:Shadows - Pastel Ghost - Abyss.mp3
+139:Skeleton - Pastel Ghost - Abyss.mp3
+140:Dark Beach - Pastel Ghost - Abyss.mp3
+141:Translucid - Pastel Ghost - Abyss.mp3
+142:Lilacs - Pastel Ghost - Abyss.mp3
+143:Pulse - Pastel Ghost - Abyss.mp3
+144:Abyss - Pastel Ghost - Abyss.mp3
 playlist_end

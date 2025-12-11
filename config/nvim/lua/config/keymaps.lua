@@ -15,10 +15,12 @@ vim.keymap.set("n", "<A-h>", "<C-W>5<", { silent = true, noremap = false, desc =
 vim.keymap.set("n", "<A-l>", "<C-W>5>", { silent = true, noremap = false, desc = "Resize Window Right" })
 
 -- Run Code Mappings
-vim.keymap.set("n", "<leader>rp", ":w<CR>:!poetry run python %<CR>", { noremap = true, silent = false, desc = "Run Python (Poetry)" })
+vim.keymap.set("n", "<leader>rp", ":w<CR>:!poetry run python %<CR>",
+  { noremap = true, silent = false, desc = "Run Python (Poetry)" })
 vim.keymap.set("n", "<leader>rr", ":w<CR>:!Rscript %<CR>", { noremap = true, silent = false, desc = "Run Rscript" })
 vim.keymap.set("n", "<leader>rg", ":w<CR>:!go run %<CR>", { noremap = true, silent = false, desc = "Run Go" })
 vim.keymap.set("n", "<leader>rty", ":!typora %<CR>", { desc = "Open in Typora" })
+vim.keymap.set("n", "<leader>cw", ":colorscheme wal<CR>", { noremap = true, silent = false, desc = "Change Colorscheme" })
 
 -- Editing Utilities
 vim.keymap.set("n", "<leader>nh", ":noh<CR>", { noremap = true, silent = false, desc = "Clear Search Highlight" })

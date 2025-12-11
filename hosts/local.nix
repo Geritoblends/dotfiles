@@ -7,6 +7,17 @@
   home.packages = with pkgs; [
     # --- 🖼️ GUI / Wayland Core ---
     foot
+    hyprlock
+    hypridle
+    hyprpicker
+    hyprshot
+    waybar
+    dunst
+    swww
+    fuzzel
+    wl-clipboard
+    wlogout
+
     lxappearance
     nwg-look 
     

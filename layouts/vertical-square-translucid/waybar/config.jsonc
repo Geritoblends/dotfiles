@@ -1,13 +1,13 @@
 {
         "layer": "top",
-        "margin": "5",
-        "position": "top",
+        "margin": "0",
+        "position": "left",
         "reload_style_on_change": true,
         // "modules-left": ["custom/apple", "mpd", "custom/cava"],
-        "modules-left": ["custom/apple"],
+        "modules-left": ["hyprland/workspaces"],
         // "modules-center": ["hyprland/workspaces"],
-        "modules-center": ["hyprland/workspaces"],
-        "modules-right": ["network", "battery", "clock"],
+        "modules-center": ["clock"],
+        "modules-right": ["tray", "network", "battery", "custom/apple"],
         "hyprland/workspaces": {
             "format": "{icon}",
             "format-icons": {
@@ -20,11 +20,11 @@
                 "10":"󰍳 ",
                 "95":" ",
                 "97":" ",
-                "default": "",
-                "empty": ""
+                "default": " ",
+                "empty": " "
             },
             "persistent-workspaces": {
-                "*": [ 1,2,3,95,97]
+                "*": [ 1,2,3 ]
             }
         },
 
@@ -44,7 +44,7 @@
         },
 
         "clock": {
-            "format": "{:%a %d %b %I:%M %p}",
+          "format": "{:%d\n%m\n \n%H\n%M}",
             "interval": 1,   
             "tooltip-format": "<big><big><tt>{calendar}</tt></big></big>",
             "calendar": {
@@ -61,8 +61,8 @@
         "network": {
             "format-wifi": " ",
             "format-ethernet":" ",
-            "format-disconnected": " ",
-            "format-linked": " ",
+            "format-disconnected": "󰖟",
+            "format-linked": "󰖟",
             "tooltip-format-disconnected": "Error",
             "tooltip-format-wifi": "{essid} ({signalStrength}%)",
             "tooltip-format-ethernet": "{ifname} 🖧 ",
@@ -90,7 +90,8 @@
                 "warning": 20,
                 "critical": 5
             },
-            "format": "{capacity}%  ",
+            "format": " ",
+            "format-tooltip": "{capacity}%   "
         },
 
         "custom/pacman": {
@@ -151,7 +152,7 @@
 	    "icon-blacklist": ["blueman", "blueman-applet"]
         },
 	"custom/apple": {
-		"format":"  ",
+		"format":"<big><big></big></big>",
 		"tooltip": true,
 		"on-click": "wlogout",
 	},

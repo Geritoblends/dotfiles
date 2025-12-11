@@ -1,0 +1,231 @@
+@import url("/home/gero/.cache/wal/waybar-colors.css");
+
+* {
+  font-family: "JetBrains Mono NF";
+  font-size: 14px;
+  font-weight: 900;
+  color: @fg;
+  text-shadow: none;
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+#waybar {
+  background-color: alpha(@bg, 0.5);
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  background-color: alpha(@bg01, 0.3);
+  border-radius: 6px;
+  padding: 0px 8px;
+  margin: 4px 0px;
+  box-shadow: none;
+  transition: all 0.4s ease;
+}
+
+.modules-right {
+  margin-right: 11px;
+}
+
+.modules-center {
+  background-color: transparent;
+}
+
+.modules-left {
+  margin-left: 15px;
+}
+
+tooltip {
+  border-radius: 10px;
+  background-color: @bg; /* base01 with opacity */
+  border: solid 0px @bg01;
+}
+
+#custom-apple {
+  margin-right: 25px;
+  margin-top: -4px;
+  color: @fg;
+  padding: 0px 0px;
+}
+
+#workspaces {
+  margin: 0px 0px 0px 0px;
+  background-color: transparent;
+  border-radius: 0px 0px 0px 0px;
+}
+
+#workspaces button {
+  font-size: 8px;
+  border-radius: 8px;
+  padding: 0px;
+  padding-left: 5px;
+  background-image: none;
+  transition: all 0.4s ease;
+}
+
+#workspaces button * {
+  transition: all 0.3s ease;
+  border: solid 0px transparent;
+  box-shadow: transparent;
+  outline: transparent;
+  margin-right: -0px;
+}
+
+#workspaces button.empty * {
+  color: alpha(@fg, 0.2);
+}
+
+#workspaces button.active * {
+  color: @fg;
+}
+
+#workspaces button:hover * {
+  color: @fg;
+}
+
+#tray {
+  margin: 0px 0px;
+  margin-top: 0px;
+  border-radius: 0px;
+  padding-top: 0px;
+}
+
+#tray menu {
+  background-color: @bg;
+  border-radius: 0px;
+}
+
+#tray * {
+  padding: 0 0px;
+}
+
+#tray,
+#battery,
+#network {
+  margin-right: 15px;
+}
+
+#mode,
+#battery,
+#cpu,
+#network,
+#memory,
+#custom-spotlight,
+#bluetooth,
+#pulseaudio,
+#backlight,
+#temperature,
+#clock {
+  border-radius: 20px;
+}
+
+#clock {
+  margin-left: 0px;
+  margin-right: 0px;
+  color: @fg;
+  font-size: 14.5px;
+  font-weight: 900;
+}
+
+#cpu,
+#memory,
+#bluetooth,
+#network,
+#custom-spotlight,
+#temperature {
+  padding-top: 0px;
+  color: @fg;
+  transition: all 0.4s ease;
+}
+
+#battery {
+  padding: 0px 0px;
+  transition: all 0.3s ease;
+  color: @fg;
+  font-size: 17px;
+}
+
+#battery.charging {
+  color: @green;
+}
+
+#battery.warning:not(.charging),
+#battery.critical:not(.charging) {
+  color: @red;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#battery.charging.full {
+  color: @green;
+}
+
+@keyframes blink {
+  to {
+    color: @fg;
+  }
+}
+
+#custom-cava {
+  margin: 0px 0px;
+}
+
+#mpd {
+  color: @fg;
+  margin-top: 0px;
+  font-size: 0px;
+}
+
+#cpu {
+  color: @magenta;
+  background-color: transparent;
+  margin-right: 0px;
+}
+
+#cpu:hover {
+  background-color: alpha(@magenta, 0.5);
+  color: @bg;
+}
+
+#memory {
+  color: @yellow;
+  background-color: transparent;
+}
+
+#memory:hover {
+  background-color: alpha(@yellow, 0.5);
+  color: @bg;
+}
+
+#network {
+  color: @fg;
+  margin-right: 15px;
+}
+
+#network.disconnected {
+  margin-right: 20px;
+}
+
+#network.linked {
+  margin-right: 20px;
+}
+
+#network:hover {
+  color: @bg;
+  background-color: alpha(@blue, 0.5);
+}
+
+#temperature {
+  color: @orange;
+}
+
+#temperature:hover {
+  color: @bg;
+  background-color: alpha(@orange, 0.5);
+}

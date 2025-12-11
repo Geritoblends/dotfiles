@@ -176,8 +176,8 @@ Artist: Pastel Ghost
 Title: Abyss
 Album: Abyss
 Format: 48000:16:2
-mtime: 1764122398
-added: 1764718955
+mtime: 1765469867
+added: 1765469867
 song_end
 song_begin: Clouds - Pastel Ghost - Abyss.mp3
 Time: 248.267
@@ -185,17 +185,17 @@ Artist: Pastel Ghost
 Title: Clouds
 Album: Abyss
 Format: 48000:16:2
-mtime: 1764122115
-added: 1764718955
+mtime: 1765469672
+added: 1765469673
 song_end
-song_begin: DARK BEACH - Pastel Ghost - Abyss.mp3
-Time: 267.029
+song_begin: Dark Beach - Pastel Ghost - Abyss.mp3
+Time: 222.017
 Artist: Pastel Ghost
-Title: DARK BEACH
+Title: Dark Beach
 Album: Abyss
 Format: 48000:16:2
-mtime: 1764122224
-added: 1764718955
+mtime: 1765469758
+added: 1765469759
 song_end
 song_begin: Embrace - Pastel Ghost - Abyss.mp3
 Time: 204.173
@@ -203,8 +203,8 @@ Artist: Pastel Ghost
 Title: Embrace
 Album: Abyss
 Format: 48000:16:2
-mtime: 1764122074
-added: 1764718955
+mtime: 1765469647
+added: 1765469647
 song_end
 song_begin: Lilacs - Pastel Ghost - Abyss.mp3
 Time: 220.02
@@ -212,8 +212,8 @@ Artist: Pastel Ghost
 Title: Lilacs
 Album: Abyss
 Format: 48000:16:2
-mtime: 1764122316
-added: 1764718955
+mtime: 1765469810
+added: 1765469810
 song_end
 song_begin: Prism - Pastel Ghost - Abyss.mp3
 Time: 209.002
@@ -221,17 +221,17 @@ Artist: Pastel Ghost
 Title: Prism
 Album: Abyss
 Format: 48000:16:2
-mtime: 1764122043
-added: 1764718955
+mtime: 1765469623
+added: 1765469623
 song_end
 song_begin: Pulse - Pastel Ghost - Abyss.mp3
-Time: 267.029
+Time: 242.996
 Artist: Pastel Ghost
 Title: Pulse
 Album: Abyss
 Format: 48000:16:2
-mtime: 1764122357
-added: 1764718955
+mtime: 1765469839
+added: 1765469839
 song_end
 song_begin: Shadows - Pastel Ghost - Abyss.mp3
 Time: 208.631
@@ -239,17 +239,17 @@ Artist: Pastel Ghost
 Title: Shadows
 Album: Abyss
 Format: 48000:16:2
-mtime: 1764122151
-added: 1764718955
+mtime: 1765469700
+added: 1765469700
 song_end
 song_begin: Skeleton - Pastel Ghost - Abyss.mp3
-Time: 267.029
+Time: 240
 Artist: Pastel Ghost
 Title: Skeleton
 Album: Abyss
 Format: 48000:16:2
-mtime: 1764122185
-added: 1764718955
+mtime: 1765469729
+added: 1765469729
 song_end
 song_begin: Translucid - Pastel Ghost - Abyss.mp3
 Time: 196.992
@@ -257,8 +257,8 @@ Artist: Pastel Ghost
 Title: Translucid
 Album: Abyss
 Format: 48000:16:2
-mtime: 1764122283
-added: 1764718955
+mtime: 1765469782
+added: 1765469782
 song_end
 song_begin: Carita Angelikal - Rels B ft. Kapo - afroLOVA 25'.mp3
 Time: 174.04500000000002
@@ -349,6 +349,33 @@ Album: asterik
 Format: 48000:16:2
 mtime: 1764210023
 added: 1764718955
+song_end
+song_begin: Hot Blooded - New Constellations - asterik.mp3
+Time: 268.236
+Artist: New Constellations
+Title: Hot Blooded
+Album: asterik
+Format: 48000:16:2
+mtime: 1765246857
+added: 1765246857
+song_end
+song_begin: Moonlight - Kali Uchis - asterik.mp3
+Time: 187.501
+Artist: Kali Uchis
+Title: Moonlight
+Album: asterik
+Format: 48000:16:2
+mtime: 1765343238
+added: 1765343238
+song_end
+song_begin: Telepatía - Kali Uchis - asterik.mp3
+Time: 169.923
+Artist: Kali Uchis
+Title: Telepatía
+Album: asterik
+Format: 48000:16:2
+mtime: 1765343216
+added: 1765343216
 song_end
 song_begin: Cause I'm A Man - Tame Impala - Currents.mp3
 Time: 244.703
@@ -898,6 +925,150 @@ Format: 48000:16:2
 mtime: 1765175840
 added: 1765175840
 song_end
+song_begin: Aria Math - C418 - Minecraft: Volume Beta.mp3
+Time: 309.13800000000003
+Artist: C418
+Title: Aria Math
+Album: Minecraft: Volume Beta
+Format: 48000:16:2
+mtime: 1765256956
+added: 1765256956
+song_end
+song_begin: Ballad of the Cats - C418 - Minecraft: Volume Beta.mp3
+Time: 274.738
+Artist: C418
+Title: Ballad of the Cats
+Album: Minecraft: Volume Beta
+Format: 48000:16:2
+mtime: 1765256996
+added: 1765256996
+song_end
+song_begin: Blind Spots - C418 - Minecraft: Volume Beta.mp3
+Time: 331.58
+Artist: C418
+Title: Blind Spots
+Album: Minecraft: Volume Beta
+Format: 48000:16:2
+mtime: 1765256592
+added: 1765256592
+song_end
+song_begin: Dead Voxel - C418 - Minecraft: Volume Beta.mp3
+Time: 295.137
+Artist: C418
+Title: Dead Voxel
+Album: Minecraft: Volume Beta
+Format: 48000:16:2
+mtime: 1765256570
+added: 1765256570
+song_end
+song_begin: Dreiton - C418 - Minecraft: Volume Beta.mp3
+Time: 497
+Artist: C418
+Title: Dreiton
+Album: Minecraft: Volume Beta
+Format: 48000:16:2
+mtime: 1765257052
+added: 1765257052
+song_end
+song_begin: Far - C418 - Minecraft: Volume Beta.mp3
+Time: 191.065
+Artist: C418
+Title: Far
+Album: Minecraft: Volume Beta
+Format: 48000:16:2
+mtime: 1765257148
+added: 1765257148
+song_end
+song_begin: Flake - C418 - Minecraft: Volume Beta.mp3
+Time: 169.412
+Artist: C418
+Title: Flake
+Album: Minecraft: Volume Beta
+Format: 48000:16:2
+mtime: 1765256608
+added: 1765256608
+song_end
+song_begin: Floating Trees - C418 - Minecraft: Volume Beta.mp3
+Time: 244.14600000000002
+Artist: C418
+Title: Floating Trees
+Album: Minecraft: Volume Beta
+Format: 48000:16:2
+mtime: 1765256688
+added: 1765256688
+song_end
+song_begin: Haunt Muskie - C418 - Minecraft: Volume Beta.mp3
+Time: 360.942
+Artist: C418
+Title: Haunt Muskie
+Album: Minecraft: Volume Beta
+Format: 48000:16:2
+mtime: 1765256649
+added: 1765256649
+song_end
+song_begin: Intro - C418 - Minecraft: Volume Beta.mp3
+Time: 275.26
+Artist: C418
+Title: Intro
+Album: Minecraft: Volume Beta
+Format: 48000:16:2
+mtime: 1765257174
+added: 1765257174
+song_end
+song_begin: Kyoto - C418 - Minecraft: Volume Beta.mp3
+Time: 248.302
+Artist: C418
+Title: Kyoto
+Album: Minecraft: Volume Beta
+Format: 48000:16:2
+mtime: 1765256975
+added: 1765256975
+song_end
+song_begin: Mutation - C418 - Minecraft: Volume Beta.mp3
+Time: 184.064
+Artist: C418
+Title: Mutation
+Album: Minecraft: Volume Beta
+Format: 48000:16:2
+mtime: 1765256625
+added: 1765256625
+song_end
+song_begin: Taswell - C418 - Minecraft: Volume Beta.mp3
+Time: 514.832
+Artist: C418
+Title: Taswell
+Album: Minecraft: Volume Beta
+Format: 48000:16:2
+mtime: 1765257023
+added: 1765257023
+song_end
+song_begin: The End - C418 - Minecraft: Volume Beta.mp3
+Time: 904.528
+Artist: C418
+Title: The End
+Album: Minecraft: Volume Beta
+Format: 48000:16:2
+mtime: 1765257107
+added: 1765257107
+song_end
+song_begin: Wait - C418 - Minecraft: Volume Beta.mp3
+Time: 233.615
+Artist: C418
+Title: Wait
+Album: Minecraft: Volume Beta
+Format: 48000:16:2
+mtime: 1765257127
+added: 1765257127
+song_end
+song_begin: Warmth - C418 - Minecraft: Volume Beta.mp3
+Time: 238.50300000000001
+Artist: C418
+Title: Warmth
+Album: Minecraft: Volume Beta
+Format: 48000:16:2
+mtime: 1765256667
+added: 1765256667
+song_end
 song_begin: Blackmail - Mareux - Nonstop Romance.mp3
 Time: 167.079
 Artist: Mareux
@@ -978,6 +1149,114 @@ Album: Nonstop Romance
 Format: 48000:16:2
 mtime: 1765177445
 added: 1765172261
+song_end
+song_begin: Borderline - Tame Impala - The Slow Rush.mp3
+Time: 237.80700000000002
+Artist: Tame Impala
+Title: Borderline
+Album: The Slow Rush
+Format: 48000:16:2
+mtime: 1765424058
+added: 1765424059
+song_end
+song_begin: Breathe Deeper - Tame Impala - The Slow Rush.mp3
+Time: 372.65000000000003
+Artist: Tame Impala
+Title: Breathe Deeper
+Album: The Slow Rush
+Format: 48000:16:2
+mtime: 1765424117
+added: 1765424118
+song_end
+song_begin: Glimmer - Tame Impala - The Slow Rush.mp3
+Time: 128.81
+Artist: Tame Impala
+Title: Glimmer
+Album: The Slow Rush
+Format: 48000:16:2
+mtime: 1765424288
+added: 1765424288
+song_end
+song_begin: Instant Destiny - Tame Impala - The Slow Rush.mp3
+Time: 193.685
+Artist: Tame Impala
+Title: Instant Destiny
+Album: The Slow Rush
+Format: 48000:16:2
+mtime: 1765424033
+added: 1765424033
+song_end
+song_begin: Is It True - Tame Impala - The Slow Rush.mp3
+Time: 238.122
+Artist: Tame Impala
+Title: Is It True
+Album: The Slow Rush
+Format: 48000:16:2
+mtime: 1765424235
+added: 1765424235
+song_end
+song_begin: It Might Be Time - Tame Impala - The Slow Rush.mp3
+Time: 274.483
+Artist: Tame Impala
+Title: It Might Be Time
+Album: The Slow Rush
+Format: 48000:16:2
+mtime: 1765424266
+added: 1765424266
+song_end
+song_begin: Lost In Yesterday - Tame Impala - The Slow Rush.mp3
+Time: 259.738
+Artist: Tame Impala
+Title: Lost In Yesterday
+Album: The Slow Rush
+Format: 48000:16:2
+mtime: 1765424211
+added: 1765424211
+song_end
+song_begin: On Track - Tame Impala - The Slow Rush.mp3
+Time: 301.76
+Artist: Tame Impala
+Title: On Track
+Album: The Slow Rush
+Format: 48000:16:2
+mtime: 1765424173
+added: 1765424173
+song_end
+song_begin: One More Hour - Tame Impala - The Slow Rush.mp3
+Time: 433.121
+Artist: Tame Impala
+Title: One More Hour
+Album: The Slow Rush
+Format: 48000:16:2
+mtime: 1765424332
+added: 1765424332
+song_end
+song_begin: One More Year - Tame Impala - The Slow Rush.mp3
+Time: 322.368
+Artist: Tame Impala
+Title: One More Year
+Album: The Slow Rush
+Format: 48000:16:2
+mtime: 1765424010
+added: 1765424010
+song_end
+song_begin: Posthumous Forgiveness - Tame Impala - The Slow Rush.mp3
+Time: 366.08
+Artist: Tame Impala
+Title: Posthumous Forgiveness
+Album: The Slow Rush
+Format: 48000:16:2
+mtime: 1765424088
+added: 1765424088
+song_end
+song_begin: Tomorrow's Dust - Tame Impala - The Slow Rush.mp3
+Time: 326.844
+Artist: Tame Impala
+Title: Tomorrow's Dust
+Album: The Slow Rush
+Format: 48000:16:2
+mtime: 1765424145
+added: 1765424146
 song_end
 song_begin: Black Beauty - Lana Del Rey - Ultraviolence.mp3
 Time: 314.533
